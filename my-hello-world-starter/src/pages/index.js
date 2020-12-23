@@ -1,5 +1,10 @@
 import React from "react"
+import ContactBar from "../components/contactBar"
 
-export default function Home() {
-  return <div>Hello world!</div>
-}
+const IndexPage = () => (
+  <main>
+    <ContactBar />
+  </main>
+)
+
+export default IndexPage
