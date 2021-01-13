@@ -1,0 +1,32 @@
+.footer {
+  background-color: white;
+  padding: 5px;
+  display: flex;
+  color: black;
+  font-size: 16px;
+}
+
+.footer .address {
+  list-style: none;
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  padding-right: 10px;
+  transform: translate(280%);
+}
+
+.title {
+  font-size: 20px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.phone {
+  margin: 11px 0;
+}
+
+.follow {
+  list-style: none;
+  display: flex;
+  transform: translate(900%);
+}
