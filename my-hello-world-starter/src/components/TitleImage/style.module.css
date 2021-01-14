@@ -26,6 +26,7 @@
   font-size: 64px;
   text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   border-bottom: white solid 1px;
+  cursor: pointer;
 }
 
 .titleImage p {

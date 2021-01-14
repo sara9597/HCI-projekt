@@ -12,8 +12,8 @@
   padding: 14px 15px;
   list-style: none;
   width: fit-content;
-  font-size: 14px;
-  line-height: 22px;
+  font-size: 20px;
+  line-height: 10px;
   text-transform: uppercase;
   color: #8f6a43;
   border-right: 2px #999 solid;
@@ -25,5 +25,5 @@
 
 .navigationBar .active,
 .navigationBar .active:hover {
-  border-bottom: 2px solid #8F6A43;
+  border-bottom: 2px solid #8f6a43;
 }
