@@ -1,0 +1,12 @@
+.about {
+  background-color: #ece7da;
+  color: black;
+  width: 500;
+}
+
+.about > p {
+  margin-top: 0%;
+  line-height: 2rem;
+  padding: 50px;
+  text-align: left;
+}
