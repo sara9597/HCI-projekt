@@ -12,8 +12,8 @@ const Footer = () => (
     </ul>
     <ul className={styles.follow}>
       <li>Follow us:</li>
-            <FontAwesomeIcon icon="twitter"/>
-    </ul>
+           
+    </ul> 
   </footer>
 )
 
