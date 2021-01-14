@@ -2,6 +2,7 @@
   background-color: white;
   padding: 5px;
   display: flex;
+  justify-content: space-between;
   color: black;
   font-size: 16px;
 }
@@ -11,8 +12,6 @@
   display: flex;
   flex-flow: column;
   text-align: center;
-  padding-right: 10px;
-  transform: translate(240%);
 }
 
 .title {
@@ -28,8 +27,8 @@
 .follow {
   list-style: none;
   display: flex;
-  padding-left: 25px;
-  transform: translate(900%);
+  flex-flow: column;
+  text-align: center;
 }
 
 .rights {
@@ -40,4 +39,10 @@
 .left {
   list-style: none;
   padding: 0%;
+}
+
+.icons {
+  width: 40px;
+  height: 40px;
+  margin: 10px;
 }

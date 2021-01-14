@@ -18,6 +18,22 @@ const Footer = () => (
     </ul>
     <ul className={styles.follow}>
       <li>Follow us:</li>
+      <li>
+        <div>
+          <img
+            src="https://github.com/sara9597/HCI-projekt/blob/master/my-hello-world-starter/src/images/instagram.png?raw=true"
+            className={styles.icons}
+          ></img>
+          <img
+            src="https://github.com/sara9597/HCI-projekt/blob/master/my-hello-world-starter/src/images/facebook.png?raw=true"
+            className={styles.icons}
+          ></img>
+          <img
+            src="https://github.com/sara9597/HCI-projekt/blob/master/my-hello-world-starter/src/images/twitter.png?raw=true"
+            className={styles.icons}
+          ></img>
+        </div>
+      </li>
     </ul>
   </footer>
 )
