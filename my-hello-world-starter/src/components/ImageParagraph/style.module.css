@@ -1,0 +1,33 @@
+.imageParagraph {
+  display: flex;
+  justify-content: space-between;
+  margin: 200px 50px;
+  margin-left: 100px;
+  width: 340px;
+  height: 50%;
+  align-items: center;
+  background-color: #ece7da;
+  border-color: #707070;
+}
+
+.reverse {
+  flex-flow: row-reverse;
+}
+
+.imageParagraph .imageHalf,
+.articleHalf {
+  min-width: 100%;
+  height: 50%;
+}
+
+.imageParagraph article {
+  max-width: 70%;
+  margin: 0 auto;
+  letter-spacing: 0.2px;
+  margin-bottom: 30%;
+}
+
+.imageHalf div,
+.imageHalf div div {
+  width: 100%;
+}
