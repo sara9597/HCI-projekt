@@ -1,5 +1,4 @@
 import React from "react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Logo from "../Logo"
 import styles from "./style.module.css"
 

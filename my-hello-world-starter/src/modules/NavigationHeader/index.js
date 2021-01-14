@@ -1,10 +1,10 @@
 import React from "react"
 
-import Logo from "../Logo"
+import Logo from "../components/Logo"
 import Navigation from "../Navigation"
 
 import styles from "./style.module.css"
-import LoginButton from "../LoginButton"
+import LoginButton from "../components/LoginButton"
 
 const NavigationHeader = ({ activeTab }) => (
   <section className={styles.navigationHeader}>
