@@ -1,10 +1,17 @@
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-
+import Logo from "../Logo"
 import styles from "./style.module.css"
 
 const Footer = () => (
   <footer className={styles.footer}>
+    <ul className={styles.left}>
+      <li className={styles.rights}>©2020 by MusicAgent </li>
+      <li className={styles.logo}>
+        {" "}
+        <Logo />{" "}
+      </li>
+    </ul>
     <ul className={styles.address}>
       <li className={styles.title}>CONTACT:</li>
       <li>musicagent@gmail.com</li>
@@ -12,8 +19,7 @@ const Footer = () => (
     </ul>
     <ul className={styles.follow}>
       <li>Follow us:</li>
-           
-    </ul> 
+    </ul>
   </footer>
 )
 

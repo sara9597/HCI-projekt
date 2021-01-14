@@ -1,10 +1,11 @@
 .navigationBar {
   position: absolute;
-    left: 0px;
-    height: 40px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  left: 0px;
+  margin-top: 10px;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .navigationBar li {
@@ -14,7 +15,8 @@
   font-size: 14px;
   line-height: 22px;
   text-transform: uppercase;
-  color: #555;
+  color: #8f6a43;
+  border-right: 2px #999 solid;
 }
 .navigationBar li:hover {
   border-bottom: 2px solid darkgray;
