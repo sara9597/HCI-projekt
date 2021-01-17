@@ -7,6 +7,12 @@
 .about > p {
   margin-top: 0%;
   line-height: 2rem;
-  padding: 50px;
-  text-align: left;
+  padding: 70px;
+  text-align:left;
+  font-size: 20px;
+}
+.about > p > span{
+  color:#7A5834;
+  font-weight: 600;
+  cursor: pointer;
 }
