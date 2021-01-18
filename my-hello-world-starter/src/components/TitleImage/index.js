@@ -1,14 +1,16 @@
 import React from "react"
 
+import CoverImage from "../../components/Images/CoverImage"
 import styles from "./style.module.css"
 
 const TitleImage = () => (
   <section className={styles.titleImage}>
-    <div>
+  
+    <CoverImage/>
       <button>
-        <h1>BOOK A MUSICIAN</h1>
+        <span>BOOK A MUSICIAN</span>
       </button>
-    </div>
+    
   </section>
 )
 

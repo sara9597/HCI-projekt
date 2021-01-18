@@ -6,8 +6,8 @@ const navTabs = ["HOME", "MUSICIANS", "BLOG", "CONTACT", "JOIN"]
 
 const NavigationBar = ({ activeTab, useThisStyle }) => (
   <nav className={styles[useThisStyle || "navigationBar"]}>
-    {navTabs.map(tab => (
-      <li className={tab === activeTab ? styles.active : ""}>{tab}</li>
+    {navTabs.map((tab, index) => (
+      <li key={index} className={tab === activeTab ? styles.active : ""}>{tab}</li>
     ))}
   </nav>
 )
