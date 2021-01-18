@@ -18,13 +18,16 @@ of your life with this
 most wanted band.`
 
 const PageContent = () => (
-  <div>
+  <div className={styles.container}>
     <h1 className={styles.title}>OUR MOST POPULAR MUSICIANS</h1>
-    <section className={styles.pageContent}>
-      <ImageParagraph image={<Elena />} title="Elena" text={firstText} />
-      <ImageParagraph image={<Antony />} title="Antony" text={secondText} />
-      <ImageParagraph image={<Nexus />} title="Nexus band" text={thirdText} />
-    </section>
+    <div className={styles.containerContent}>
+      <p className={styles.arrowleft}></p>
+        <section className={styles.pageContent}>
+          <ImageParagraph image={<Elena />} title="Elena" text={firstText} />
+          <ImageParagraph image={<Antony />} title="Antony" text={secondText} />
+          <ImageParagraph image={<Nexus />} title="Nexus band" text={thirdText} />
+        </section>
+       <p className={styles.arrowright}></p></div>
   </div>
 )
 

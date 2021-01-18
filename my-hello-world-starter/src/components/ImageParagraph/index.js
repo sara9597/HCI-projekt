@@ -9,6 +9,7 @@ const ImageParagraph = ({ image, title, text }) => (
         <article>
           <h2>{title}</h2>
           <p>{text}</p>
+          <button className={styles.button1}>View profile</button>
         </article>
       </div>
     </div>

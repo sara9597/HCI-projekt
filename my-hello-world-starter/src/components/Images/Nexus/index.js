@@ -7,7 +7,7 @@ const Nexus = () => {
     query {
       myImage: file(relativePath: { eq: "Nexus.jpg" }) {
         childImageSharp {
-          fixed(width: 340, height: 300) {
+          fixed(width: 240, height: 200) {
             ...GatsbyImageSharpFixed
           }
         }

@@ -7,7 +7,7 @@ const CoverImage = () => {
     query {
       myImage: file(relativePath: { eq: "TitleImage.jpg" }) {
         childImageSharp {
-            fluid(maxWidth: 1920, quality: 100) {
+            fluid(maxWidth: 1920, maxHeight: 700, quality: 100) {
                 ...GatsbyImageSharpFluid
               }
         }

@@ -5,6 +5,7 @@
   width: 500px;
   display: flex;
   justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .navigationBar li {
@@ -21,9 +22,11 @@
   border-bottom: 3px solid darkgray;
   cursor: pointer;
 }
-.navigationBar li:last-child {
-  border-right: none;
+.navigationBar a:last-child {
   font-weight: 550;
+}
+.navigationBar a:last-child li{
+  border-right: none;
 }
 
 .navigationBar .active,
