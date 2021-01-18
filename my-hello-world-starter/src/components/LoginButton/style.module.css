@@ -30,3 +30,9 @@
   color: black;
   padding: 120 px 40px;
 }
+
+.button1:hover {
+  background: #d6c8c8;
+  cursor: pointer;
+  border: 2px solid black;
+}

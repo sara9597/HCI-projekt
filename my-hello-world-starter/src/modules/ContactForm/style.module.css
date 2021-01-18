@@ -3,9 +3,11 @@
   justify-content: center;
   padding: 50px 50px;
   background-image: url("../../images/ContactBackground.jpg");
-  background-position: fixed;
+  
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center; 
+  
 }
 .box {
   display: flex;
