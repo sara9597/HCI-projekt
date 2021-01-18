@@ -1,80 +1,77 @@
 .contactForm {
-    display: flex;
-    justify-content: space-between;
-    padding: 50px 50px;
+  display: flex;
+  justify-content: center;
+  padding: 50px 50px;
+  background-image: url("../../images/ContactBackground.jpg");
+  background-size: cover;
+  height: "20px";
 }
- 
+.box {
+  display: flex;
+
+  justify-content: center;
+  gap: 1ch;
+  background-color: #e4ebf3;
+  border: 2px #707070 solid;
+  width: 70%;
+}
+
 .contactForm h2 {
-    text-transform: uppercase;
-    color: #333;
-    font-weight: lighter;
-    font-size: 28px;
+  text-transform: uppercase;
+  color: #70614A;
+  font-weight: lighter;
+  font-size: 28px;
+  padding-bottom: 30px;
 }
- 
-.contactInfo h3 {
-    text-transform: uppercase;
-    color: #999;
-    margin: 0;
-    font-size: 14px;
+
+.contactInfo p {
+  color: #70614A;
+  font-weight: bolder;
+  margin: 0;
+  padding-bottom: 30px;
 }
- 
-.contactInfo p, address {
-    color: #333;
-    font-weight: bolder;
-    margin: 0;
-    padding-bottom: 30px;
-}
- 
+
 .contactInfo {
-    width: 400px;
+  width: 50%;
+  padding: 30px;
+  text-align: center;
+  line-height: 0rem;
+  margin-top: 50px;
 }
 /*/////////////*/
 .form form {
-    width: 900px;
-    display: flex;
-    justify-content: flex-start;
-    flex-flow: row;
-    flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: column;
+  flex-wrap: wrap;
+  padding: 30px;
 }
- 
+
 .form form > div {
-    width: 400px;
-    margin-right: 45px;
-    display: flex;
-    flex-flow: column;
+  width: 400px;
+  margin-right: 45px;
+  display: flex;
+  flex-flow: column;
 }
- 
+
 .form form input {
-    width: 400px;
-    height: 35px;
-    border: 1px solid lightgray;
+  width: 400px;
+  height: 35px;
+  border: 1px solid lightgray;
+  padding-bottom: 20px;
 }
- 
-.form form label {
-    padding: 10px 0;
-}
+
 .form form .message {
-    width: 100%;
+  width: 100%;
 }
- 
+
 .form form .message > input {
-    height: 200px;
-    width: auto;
+  height: 200px;
 }
- 
-.contactForm button {
-    background-color: #000;
-    color: white;
-    width: 185px;
-    padding: 11px 40px;
-    margin-left: auto;
-    margin-right: 45px;
-    margin-top: 15px;
-    border: 1px solid #000;
-}
- 
+
 .contactForm button:hover {
-    background: #333;
-    cursor: pointer;
-    border: 1px solid #333;
+  background: #d6c8c8;
+  cursor: pointer;
+  border: 2px solid black;
 }

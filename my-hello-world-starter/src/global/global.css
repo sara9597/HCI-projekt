@@ -1,5 +1,8 @@
-html {
-    font-family: sans-serif;
+ @import url(//db.onlinewebfonts.com/c/1333b13c4f911f3160f1c2822573f70c?family=Poor+Richard);
+ 
+ html {
+    @font-face {font-family: "Poor Richard"; src: url("//db.onlinewebfonts.com/t/1333b13c4f911f3160f1c2822573f70c.eot"); src: url("//db.onlinewebfonts.com/t/1333b13c4f911f3160f1c2822573f70c.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/1333b13c4f911f3160f1c2822573f70c.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/1333b13c4f911f3160f1c2822573f70c.woff") format("woff"), url("//db.onlinewebfonts.com/t/1333b13c4f911f3160f1c2822573f70c.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/1333b13c4f911f3160f1c2822573f70c.svg#Poor Richard") format("svg"); }
+   
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
   }

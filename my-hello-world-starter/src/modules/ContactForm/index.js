@@ -1,50 +1,43 @@
 import React from 'react'
 
 import styles from './style.module.css';
+import style from '../../components/LoginButton/style.module.css';
 
 const ContactForm = () => (
     <main className={styles.contactForm}>
+    <div className = {styles.box}>
         <section className={styles.contactInfo}>
-            <h2 className={styles.title}>villa oliva verde</h2>
-            <h3>address</h3>
-            <address>
-                2145 Inadia str, Wyndia
-            </address>
+            <h2 className={styles.title}>CONTACT US</h2>
+            <p>
+                2100, Split Croatia
+            </p>
 
-            <h3>telephone number</h3>
-            <p>+385 99 3245 570</p>
-
-            <h3>email</h3>
-            <p>example@email.com</p>
-
-            <p>IBAN: HR08497593759385739574</p>
+            <p>musicagent@gmail.com</p>
+            <p>123-456-7890</p>
         </section>
+
         <section className={styles.form}>
-            <h2 className={styles.title}>contact us</h2>
             <form>
                 <div>
-                    <label htmlFor="name">Your name</label>
-                    <input name="name" type="text" />
+                   <input name="name" type="text" placeholder = "Name*" />
                 </div>
                 <div>
-                    <label htmlFor="country" placeholder="Country">Country</label>
-                    <input name="country" type="text" />
+                  <input name="email" type="email" placeholder="Email*" />
                 </div>
                 <div>
-                    <label htmlFor="email">Email</label>
-                    <input name="email" type="email" />
-                </div>
-                <div>
-                    <label htmlFor="phone">Phone number</label>
-                    <input name="phone" type="tel" />
+                   <input name="phone" type="tel" placeholder="Phone*" />
                 </div>
                 <div className={styles.message}>
-                    <label htmlFor="message">Message</label>
-                    <input name="message" type="text" />
+                    <input name="message" type="text" placeholder="Message" />
                 </div>
-                <button>Send a message</button>
+                    <div className={style.button}>
+                        <button className={style.button1}>
+                            <section>Send</section>
+                        </button>
+                    </div>
             </form>
         </section>
+    </div>
     </main>
 )
 
