@@ -1,38 +1,28 @@
 .titleImage {
-  height: 650px;
+  height: 500;
   width: 100%;
-  position: relative;
-  background: url("https://static.wixstatic.com/media/f41f21d6e0d441f2b11f811fb398f0dc.jpg/v1/fill/w_640,h_560,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01/f41f21d6e0d441f2b11f811fb398f0dc.webp")
-    no-repeat center center;
-  background-size: cover;
+  transition: 0.5s ease-out; 
 }
 
-.titleImage > div {
-  width: fit-content;
-  height: fit-content;
-  display: flex;
-  flex-flow: column;
-  background: transparent;
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  text-align: center;
-  color: white;
-  text-transform: uppercase;
-}
-
-.titleImage h1 {
-  font-size: 64px;
+.titleImage span {
+  font-size: 60px;
   text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  color: white;
+  font-weight: 700;
   border-bottom: white solid 1px;
   cursor: pointer;
+  margin: 0px;
 }
 
-.titleImage p {
-  font-size: 30px;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-  padding: 45px 12px;
-  margin: 0;
-  border-top: 2.5px solid #fff;
+.titleImage button{
+  border-radius: 40px;
+  background-color:rgba(143,106,67,0.5);
+  border:transparent;
+  height: 80px;
+  width: 640px;
+  outline: none;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
 }

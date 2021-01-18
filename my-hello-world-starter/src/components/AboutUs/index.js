@@ -11,8 +11,9 @@ const AboutUs = () => (
       <br /> MusicAgent has been connecting clients and musicians since 2020.{" "}
       <br />
       <br />
+      <br />
       If you are a musician and want to be a part of our community
-      <strong> JOIN </strong> us!
+      <span> JOIN </span> us!
     </p>
   </section>
 )

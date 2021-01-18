@@ -4,7 +4,6 @@ import ImageParagraph from "../../components/ImageParagraph"
 import Elena from "../../components/Images/Elena"
 import Antony from "../../components/Images/Antony"
 import Nexus from "../../components/Images/Nexus"
-import { addLeadingSlash } from "history/PathUtils";
 
 const firstText = `Solo singer whose
 energy makes up for 

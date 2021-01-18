@@ -1,9 +1,9 @@
 .navigationBar {
   position: absolute;
-  left: 0px;
+  left: 420px;
   margin-top: 10px;
   height: 40px;
-  width: 100%;
+  width: 500px;
   display: flex;
   justify-content: center;
 }
@@ -19,11 +19,15 @@
   border-right: 2px #999 solid;
 }
 .navigationBar li:hover {
-  border-bottom: 2px solid darkgray;
+  border-bottom: 3px solid darkgray;
   cursor: pointer;
+}
+.navigationBar li:last-child {
+  border-right: none;
+  font-weight: 550;
 }
 
 .navigationBar .active,
 .navigationBar .active:hover {
-  border-bottom: 2px solid #8f6a43;
+  border-bottom: 3px solid #8f6a43;
 }
