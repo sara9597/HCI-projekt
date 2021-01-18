@@ -32,6 +32,7 @@ const Footer = () => (
             src="https://github.com/sara9597/HCI-projekt/blob/master/my-hello-world-starter/src/images/twitter.png?raw=true"
             className={styles.icons}
           ></img>
+          
         </div>
       </li>
     </ul>

@@ -8,10 +8,14 @@ html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  a:active,
-  a:hover {
-    outline-width: 0;
-  }
+ 
+  a,
+a:active,
+a:hover {
+  outline-width: 0;
+  text-decoration: none;
+  color: inherit;
+}
   article,
   aside,
   details,
