@@ -1,0 +1,56 @@
+.form {
+  display: flex;
+  justify-content: left;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  padding-left: 90px;
+}
+
+.form form > div {
+  display: flex;
+  flex-flow: column;
+  width: 350px;
+}
+
+.form form input {
+  display: flex;
+
+  width: 100%;
+  height: 40px;
+  border: 3px solid #707070;
+  margin-bottom: 40px;
+  border-radius: 15px;
+}
+
+.form form label {
+  color: #686764;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.button1 {
+  height: 50px;
+  width: 200px !important;
+  border-radius: 40px;
+  border-color: #707070;
+  border: 2px solid #707070;
+  background-color: #ece5e5;
+  outline: none;
+  cursor: pointer;
+}
+
+.button1:hover {
+  background: #d6c8c8;
+  cursor: pointer;
+  border: 2px solid black;
+}
+.join {
+  float: right;
+  margin-right: 50px;
+  margin-top: 0px;
+  color:#3D3720;
+}
+.join1:hover {
+  cursor: pointer;
+  color:black;
+}
