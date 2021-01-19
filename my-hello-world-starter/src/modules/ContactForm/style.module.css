@@ -2,12 +2,9 @@
   display: flex;
   justify-content: center;
   padding: 50px 50px;
-  background-image: url("../../images/ContactBackground.jpg");
-
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  /*background-image: url("../../images/ContactBackground.jpg");*/
 }
+
 .box {
   display: flex;
 
@@ -16,6 +13,8 @@
   background-color: #e4ebf3;
   border: 2px #707070 solid;
   padding: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .contactForm h2 {
