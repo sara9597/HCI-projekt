@@ -11,7 +11,9 @@
 .imageParagraph h2{
   text-align: center;
 }
-
+.imageParagraph p{
+  text-align: center;
+}
 .reverse {
   flex-flow: row-reverse;
 }
