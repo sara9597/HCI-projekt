@@ -2,7 +2,6 @@ import React from "react"
 
 import styles from "./style.module.css"
 import style from "../../components/LoginButton/style.module.css"
-import StyledBackgroundSection from "../../components/Images/ContactImage"
 
 const ContactForm = () => (
   <main className={styles.contactForm}>
