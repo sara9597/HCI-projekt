@@ -10,7 +10,6 @@
   color: white;
   font-weight: 700;
   border-bottom: white solid 1px;
-  cursor: pointer;
   margin: 0px;
 }
 
@@ -22,7 +21,13 @@
   width: 640px;
   outline: none;
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.titleImage button:hover {
+  background-color:rgba(136, 103, 67, 0.857);
+  border:transparent;
+  cursor: pointer;
 }
