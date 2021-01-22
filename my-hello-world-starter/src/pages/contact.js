@@ -4,8 +4,7 @@ import StyledBackgrounSection from "../components/Images/ContactImage"
 
 const ContactPage = () => (
     <HeaderFooterLayout activeTab="CONTACT">
-       
-        <StyledBackgrounSection />
+    <StyledBackgrounSection />
     </HeaderFooterLayout>
 )
 
