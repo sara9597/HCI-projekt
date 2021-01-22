@@ -4,14 +4,14 @@ import HeaderFooterLayout from "../layouts/headerFooter"
 import TitlePage from "../modules/TitlePage"
 import AboutUs from "../components/AboutUs"
 import PageContent from "../modules/PageContent"
-import Blog from "../modules/Blog"
+import BlogHome from "../modules/BlogHome"
 
 const IndexPage = () => (
   <HeaderFooterLayout activeTab="HOME">
     <TitlePage />
     <AboutUs />
     <PageContent />
-    <Blog />
+    <BlogHome />
   </HeaderFooterLayout>
 )
 

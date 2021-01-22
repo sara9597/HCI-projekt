@@ -1,0 +1,18 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#F0F3F8; 
+  }
+  
+  .containerContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .pageContent {
+    display: inline-flex;
+  }

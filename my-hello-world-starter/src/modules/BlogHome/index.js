@@ -16,7 +16,7 @@
  learning Beethoven or Chopin. Others opt for 
  famous piano songs from the realm of pop and rock.`
 
- const Blog = () => (
+ const BlogHome = () => (
     <div className={styles.container}>
         <h1 className={styles.title}>RECENT BLOG ARTICLES:</h1>
         <section className={styles.blogContent}>
@@ -26,4 +26,4 @@
     </div>
  )
 
-export default Blog
+export default BlogHome
