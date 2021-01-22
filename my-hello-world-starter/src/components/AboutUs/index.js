@@ -1,5 +1,4 @@
 import React from "react"
-
 import styles from "./style.module.css"
 
 const AboutUs = () => (
@@ -13,7 +12,7 @@ const AboutUs = () => (
       <br />
       <br />
       If you are a musician and want to be a part of our community
-      <span> JOIN </span> us!
+      <span onClick ={() => window.open("/join", "_self")}> JOIN </span> us!
     </div>
   </section>
 )

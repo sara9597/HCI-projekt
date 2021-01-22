@@ -7,7 +7,7 @@ const TitleImage = () => (
   <section className={styles.titleImage}>
   
     <CoverImage/>
-      <button>
+      <button onClick ={() => window.open("/musicians", "_self")}>
         <span>BOOK A MUSICIAN</span>
       </button>
     
