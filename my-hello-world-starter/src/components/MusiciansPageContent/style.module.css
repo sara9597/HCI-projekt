@@ -15,4 +15,15 @@
   
   .pageContent {
     display: inline-flex;
+    flex-direction: column;
+  }
+
+  .firstRow {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .secondRow {
+    display: flex;
+    flex-direction: row;
   }

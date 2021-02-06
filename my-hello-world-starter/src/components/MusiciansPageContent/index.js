@@ -1,37 +1,74 @@
 import React from "react"
 import styles from "./style.module.css"
 import ImageParagraph from "../../components/ImageParagraph"
-import Elena from "../../components/Images/Elena"
-import Antony from "../../components/Images/Antony"
-import Nexus from "../../components/Images/Nexus"
+import TheKicks from "../../components/Images/TheKicks"
+import Fraudio from "../../components/Images/Fraudio"
+import Anastasia from "../../components/Images/Anastasia"
+import TheHotShots from "../../components/Images/TheHotShots"
+import DJCoby from "../../components/Images/DJCoby"
+import Breakthrough from "../../components/Images/Breakthrough"
 
-const firstText = `Solo singer whose
-energy makes up for 
-the whole orchestra.`
 
-const secondText = ` "Trumpet is my passion. 
-Enjoy my music and 
-feel the jazz vibe."`
 
-const thirdText = ` Get ready for the night
-of your life with this 
-most wanted band.`
+const firstText = `Bringing fun, energy and
+a killer repertoire to
+every event.`
+
+const secondText = `Fraudio showcase on-stage 
+chemistry, incredible talent & 
+loads of experience!`
+
+const thirdText = ` When it comes to a pop guitar
+show request here is the 
+answer.`
+
+const fourthText =`The Hot Shots are a 
+professional and energetic 
+Rock & Pop Party band!`
+const fifthText = `The hottest party DJ in town!
+Young & cool-guaranteed 
+to kick off your party.
+`
+const sixthText = `With their fresh and unique 
+style, exciting performance, 
+take the music to the next level!`
 
 const MusiciansPageContent = () => (
   <div className={styles.container}>
-      <div>
-        ODE IDU FILTERIIIIII
-      </div>
-        <div className={styles.containerContent}>
-            <p className={styles.arrowleft}></p>
-             <section className={styles.pageContent}>
-                 <ImageParagraph image={<Elena />} title="Elena" text={firstText} />
-                 <ImageParagraph image={<Antony />} title="Antony" text={secondText} />
-                 <ImageParagraph image={<Nexus />} title="Nexus band" text={thirdText} />
-             </section>
-             <p className={styles.arrowright}></p>
+    <div></div>
+    <div className={styles.containerContent}>
+      <p className={styles.arrowleft}></p>
+      <section className={styles.pageContent}>
+      <div className = {styles.firstRow}>
+        <ImageParagraph
+          image={<TheKicks />}
+          title="The Kicks"
+          text={firstText}
+        />
+        <ImageParagraph image={<Fraudio />} title="Fraudio" text={secondText} />
+        <ImageParagraph
+          image={<Anastasia />}
+          title="Anastasia band"
+          text={thirdText}
+        />
         </div>
-     </div>
+        <div className = {styles.secondRow}>
+        <ImageParagraph
+          image={<TheHotShots />}
+          title="The Ho tShots"
+          text={fourthText}
+        />
+        <ImageParagraph image={<DJCoby />} title="DJ Coby" text={fifthText} />
+        <ImageParagraph
+          image={<Breakthrough />}
+          title="Breakthrough"
+          text={sixthText}
+        />
+      </div>
+      </section>
+      <p className={styles.arrowright}></p>
+    </div>
+  </div>
 )
 
 export default MusiciansPageContent

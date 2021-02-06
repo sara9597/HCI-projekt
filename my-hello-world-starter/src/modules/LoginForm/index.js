@@ -1,10 +1,49 @@
-import React from "react"
+import React, { useState } from 'react'
+import { navigate } from 'gatsby'
 
 import styles from "./style.module.css"
 import style from "../../components/LoginButton/style.module.css"
 
-const LoginForm = () => (
-  <main className={styles.loginForm}>
+const users = [
+  {
+    email: "mate",
+    password: "123"
+  },
+  {
+    email: "jure",
+    password: "123"
+  },
+]
+
+
+
+const LoginForm = () => {
+
+const [email, setemail] = useState()
+const [password, setPassword] = useState()
+const [error, setError] = useState(false)
+const [loading, setLoading] = useState(false)
+
+
+const submit = () => {
+  setError(false)
+  setLoading(true)
+  setTimeout(() => {
+    const loginSuccessful = !!users.find(user => user.email === email && user.password === password)
+    setLoading(false)
+    if (loginSuccessful) {
+      localStorage.setItem("loggedIn", email)
+      setError('Success')
+      return navigate('/')
+    }
+    setError('Wrong email or password')
+  }, 2000)
+}
+ return(
+   <main className={styles.loginForm} onKeyDown={key => {
+     if (key.key === "Enter")
+       return submit()
+   }}>
     <section className={styles.form}>
       <form>
         <div>
@@ -32,6 +71,6 @@ const LoginForm = () => (
       </form>
     </section>
   </main>
-)
+)}
 
 export default LoginForm
