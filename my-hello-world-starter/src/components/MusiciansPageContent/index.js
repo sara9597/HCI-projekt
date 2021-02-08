@@ -7,8 +7,7 @@ import Anastasia from "../../components/Images/Anastasia"
 import TheHotShots from "../../components/Images/TheHotShots"
 import DJCoby from "../../components/Images/DJCoby"
 import Breakthrough from "../../components/Images/Breakthrough"
-
-
+import SearchBox from "../Search"
 
 const firstText = `Bringing fun, energy and
 a killer repertoire to
@@ -22,7 +21,7 @@ const thirdText = ` When it comes to a pop guitar
 show request here is the 
 answer.`
 
-const fourthText =`The Hot Shots are a 
+const fourthText = `The Hot Shots are a 
 professional and energetic 
 Rock & Pop Party band!`
 const fifthText = `The hottest party DJ in town!
@@ -35,36 +34,44 @@ take the music to the next level!`
 
 const MusiciansPageContent = () => (
   <div className={styles.container}>
-    <div></div>
+    <div>
+      <SearchBox
+        hint="e.g. The Kicks"
+      />
+    </div>
     <div className={styles.containerContent}>
       <p className={styles.arrowleft}></p>
       <section className={styles.pageContent}>
-      <div className = {styles.firstRow}>
-        <ImageParagraph
-          image={<TheKicks />}
-          title="The Kicks"
-          text={firstText}
-        />
-        <ImageParagraph image={<Fraudio />} title="Fraudio" text={secondText} />
-        <ImageParagraph
-          image={<Anastasia />}
-          title="Anastasia band"
-          text={thirdText}
-        />
+        <div className={styles.firstRow}>
+          <ImageParagraph
+           image={<TheKicks />}
+            title="The Kicks"
+            text={firstText}
+          />
+          <ImageParagraph
+            image={<Fraudio />}
+            title="Fraudio"
+            text={secondText}
+          />
+          <ImageParagraph
+            image={<Anastasia />}
+            title="Anastasia band"
+            text={thirdText}
+          />
         </div>
-        <div className = {styles.secondRow}>
-        <ImageParagraph
-          image={<TheHotShots />}
-          title="The Ho tShots"
-          text={fourthText}
-        />
-        <ImageParagraph image={<DJCoby />} title="DJ Coby" text={fifthText} />
-        <ImageParagraph
-          image={<Breakthrough />}
-          title="Breakthrough"
-          text={sixthText}
-        />
-      </div>
+        <div className={styles.secondRow}>
+          <ImageParagraph
+            image={<TheHotShots />}
+            title="The Hot Shots"
+            text={fourthText}
+          />
+          <ImageParagraph image={<DJCoby />} title="DJ Coby" text={fifthText} />
+          <ImageParagraph
+            image={<Breakthrough />}
+            title="Breakthrough"
+            text={sixthText}
+          />
+        </div>
       </section>
       <p className={styles.arrowright}></p>
     </div>

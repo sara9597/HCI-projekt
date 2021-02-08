@@ -20,6 +20,18 @@ module.exports = {
         path: `${__dirname}/src/images`
       }
     },
+    {
+      resolve: `gatsby-source-airtable`,
+      options: {
+        apiKey: `YOUR_AIRTABLE_API_KEY`,
+        tables: [
+          {
+            baseId: `AIRTABLE_BASE_ID`,
+            tableName: `Musicians`
+          },
+        ]
+        }
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
