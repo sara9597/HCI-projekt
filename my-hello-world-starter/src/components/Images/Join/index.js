@@ -8,7 +8,7 @@ const Join = () => {
     query {
       myImage: file(relativePath: { eq: "Join.jpg" }) {
         childImageSharp {
-          fixed(width: 700,height:700) {
+          fixed(width: 500,height:700) {
             ...GatsbyImageSharpFixed
           }
         }

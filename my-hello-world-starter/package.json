@@ -34,9 +34,11 @@
     "mdb-ui-kit": "^3.0.0",
     "mdbreact": "^5.0.1",
     "react": "^16.12.0",
+    "react-bootstrap": "^1.4.3",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
     "react-social-media-icons": "^1.1.0",
+    "reactjs-popup": "^2.0.4",
     "sharp": "^0.27.0",
     "styled-components": "^5.2.1"
   },

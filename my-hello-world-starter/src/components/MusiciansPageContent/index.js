@@ -34,9 +34,10 @@ take the music to the next level!`
 
 const MusiciansPageContent = () => (
   <div className={styles.container}>
-    <div>
+    <div className = {styles.search}>
       <SearchBox
         hint="e.g. The Kicks"
+        
       />
     </div>
     <div className={styles.containerContent}>
