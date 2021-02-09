@@ -26,10 +26,12 @@ return(
         </button>
                 <div className={styles.header}> {title} </div>
                 <div className={styles.content}>
-</div>
+                {image}
+                {text}
+                  </div>
                   <div className={styles.actions}>
                     <Popup
-                      trigger={<button className={styles.button2}> Trigger </button>}
+                      trigger={<button className={styles.button2}> <strong>Order now</strong> </button>}
                       position="top center"
                       nested
                     >
@@ -37,15 +39,7 @@ return(
                         {text}
                       </span>
                     </Popup>
-                    <button
-                      className={styles.button2}
-                      onClick={() => {
-                        console.log('modal closed ');
-                        close();
-                      }}
-                    >
-                      Close
-          </button>
+                    
               </div>
               </div>
          )}
