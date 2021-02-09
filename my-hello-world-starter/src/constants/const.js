@@ -3,7 +3,7 @@ export const navs = [
   { tab: "MUSICIANS", to: "/musicians" },
   { tab: "BLOG", to: "/blog" },
   { tab: "CONTACT", to: "/contact" },
-  { tab: "JOIN", to: "/join" }
+  { tab: "JOIN", to: "/join" },
 ]
 
 export const items = [

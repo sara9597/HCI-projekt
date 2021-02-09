@@ -27,6 +27,18 @@
   font-size: 20px;
   margin-left: 10px;
 }
+.button {
+  display: flex;
+  align-items: flex-end;
+  border: none;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 13px;
+  margin-right: 20px;
+}
 
 .button1 {
   height: 50px;
@@ -48,9 +60,30 @@
   float: right;
   margin-right: 50px;
   margin-top: 0px;
-  color:#3D3720;
+  color: #3d3720;
 }
 .join1:hover {
   cursor: pointer;
-  color:black;
+  color: black;
 }
+
+.error {
+  opacity: 0;
+  color: red;
+  margin: 20px auto;
+  margin-top: 0;
+}
+
+.success {
+  opacity: 0;
+  color: greenyellow;
+  margin: 20px auto;
+  margin-top: 0;
+}
+
+.form .error.show,
+.success.show {
+  opacity: 1;
+}
+
+
