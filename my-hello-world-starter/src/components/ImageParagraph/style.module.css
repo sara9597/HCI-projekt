@@ -1,17 +1,17 @@
 .imageParagraph {
   display: flex;
   justify-content: space-between;
-  margin: 70px 40px 100px 40px;
+  margin: 60px 40px 10px 40px;
   width: 300px;
   height: 50%;
   align-items: center;
-  background-color: #ECE7DA;
+  background-color: #ece7da;
   border-color: #707070;
 }
-.imageParagraph h2{
+.imageParagraph h2 {
   text-align: center;
 }
-.imageParagraph p{
+.imageParagraph p {
   text-align: center;
 }
 .reverse {
@@ -55,3 +55,56 @@
   margin: 0 auto;
 }
 
+.modal {
+  font-size: 12px;
+}
+.modal > .header {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+}
+.modal > .content {
+  width: 100%;
+  padding: 10px 5px;
+}
+.modal > .actions {
+  width: 100%;
+  padding: 10px 5px;
+  margin: auto;
+  text-align: center;
+}
+.modal > .close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -10px;
+  top: -10px;
+  font-size: 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #cfcece;
+}
+
+.button2 {
+  border-radius: 40px;
+  border-color: #707070;
+  border: 2px solid #707070;
+  background-color: #ece5e5;
+  height: 30px;
+  width: 140px;
+  outline: none;
+  padding-left: 10px;
+  display: inline-block;
+  margin: 0 auto;
+  margin-right:10px;
+}
+
+.button2:hover {
+  background: #d6c8c8;
+  cursor: pointer;
+  border: 2px solid black;
+}
