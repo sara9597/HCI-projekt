@@ -4,6 +4,7 @@
  import Jazz from "../../components/Images/Jazz"
  import Piano from "../../components/Images/Piano"
 
+
  const firstText = `In 1989 saxophonist Loren Schoenberg did a series of 
  interviews with Mel Lewis on the history of jazz 
  drumming.
@@ -16,13 +17,14 @@
  learning Beethoven or Chopin. Others opt for 
  famous piano songs from the realm of pop and rock.`
 
- const BlogHome = () => (
+ const BlogHome = (activeTab) => (
     <div className={styles.container}>
         <h1 className={styles.title}>RECENT BLOG ARTICLES:</h1>
         <section className={styles.blogContent}>
             <BlogParagraph image={<Jazz />} title="The History Of Jazz Drums" text={firstText} />
             <BlogParagraph image={<Piano />} title="Top 10 Popular Piano Songs For Beginners" text={secondText} />
         </section>
+       
     </div>
  )
 

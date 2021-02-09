@@ -8,6 +8,7 @@ import TheHotShots from "../../components/Images/TheHotShots"
 import DJCoby from "../../components/Images/DJCoby"
 import Breakthrough from "../../components/Images/Breakthrough"
 import SearchBox from "../Search"
+import Pages from "../Pages";
 
 const firstText = `Bringing fun, energy and
 a killer repertoire to
@@ -32,7 +33,7 @@ const sixthText = `With their fresh and unique
 style, exciting performance, 
 take the music to the next level!`
 
-const MusiciansPageContent = () => (
+const MusiciansPageContent = ({activeTab}) => (
   <div className={styles.container}>
     <div className = {styles.search}>
       <SearchBox
@@ -75,7 +76,8 @@ const MusiciansPageContent = () => (
         </div>
       </section>
       <p className={styles.arrowright}></p>
-    </div>
+      
+    </div><Pages activeTab = '1' />
   </div>
 )
 

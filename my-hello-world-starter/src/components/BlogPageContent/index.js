@@ -6,6 +6,7 @@ import Piano from "../../components/Images/Piano"
 import FirstDance from "../../components/Images/FirstDance"
 import MusicAndHealth from "../../components/Images/MusicAndHealth"
 import Genre from "../../components/Images/Genre"
+import Pages from "../Pages";
 
 const firstText = `In 1989 saxophonist Loren Schoenberg did a series of 
 interviews with Mel Lewis on the history of jazz 
@@ -35,7 +36,7 @@ as is country, reggae, classical, jazz, and others. Genres are a key to unlockin
 lost avenues for music industry success. It really is an important part of communicating your music to 
 the masses.`
 
-const BlogPageContent = () => (
+const BlogPageContent = (activeTab) => (
     <div className={styles.container}>
         <h1 className={styles.title}>BLOG</h1>
         <section className={styles.blogContent}>
@@ -45,6 +46,7 @@ const BlogPageContent = () => (
             <BlogParagraph image={<MusicAndHealth />} title="Music and health" text={fourthText} />
             <BlogParagraph image={<Genre />} title="What Is a Music Genre?" text={fifthText} />
         </section>
+        <Pages activeTab = '1'/>
     </div>
 )
 
