@@ -1,3 +1,5 @@
+require("dotenv").config()
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -11,6 +13,14 @@ module.exports = {
       options: {
         // add your own characters to escape, replacing the default ':/'
         specialChars: "/:"
+      }
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: process.env.SPACE_ID,
+        accessToken: process.env.ACCESS_KEY,
+        downloadLocal: true,
       }
     },
     {
