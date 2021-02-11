@@ -12,6 +12,7 @@ const IndexPage = () => (
     <AboutUs />
     <PageContent />
     <BlogHome />
+   
   </HeaderFooterLayout>
 )
 

@@ -1,11 +1,13 @@
 import React from "react"
 import HeaderFooterLayout from "../layouts/headerFooter"
-import MusiciansPageContent from "../components/MusiciansPageContent"
-
+import MusiciansContainer from "../modules/MusiciansContainer"
+import Pages from "../components/Pages"
+import Search from "../components/Search"
 
 const MusiciansPage = () => (
     <HeaderFooterLayout activeTab="MUSICIANS">
-    <MusiciansPageContent />
+    <MusiciansContainer />
+    <Pages/>
     </HeaderFooterLayout>
 )
 
