@@ -20,7 +20,7 @@ module.exports = {
       options: {
         spaceId: process.env.SPACE_ID,
         accessToken: process.env.ACCESS_KEY,
-        downloadLocal: true,
+        downloadLocal: true
       }
     },
     {
@@ -38,9 +38,9 @@ module.exports = {
           {
             baseId: `AIRTABLE_BASE_ID`,
             tableName: `Musicians`
-          },
+          }
         ]
-        }
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
