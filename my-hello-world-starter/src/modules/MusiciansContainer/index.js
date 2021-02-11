@@ -63,7 +63,8 @@ const MusiciansContainer = () => {
 
   return (
     <>
-      <div className={styles.search}>
+      
+      <section className={styles.imageParagraph} className="visible-class"><div className={styles.search}>
         <input
           className={styles.input}
           type="text"
@@ -73,7 +74,6 @@ const MusiciansContainer = () => {
           onChange={handleInputChange}
         />{" "}
       </div>
-      <section className={styles.imageParagraph} className="visible-class">
         <ul className={styles.list}>
           {posts.map(node => {
             return (
