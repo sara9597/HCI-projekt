@@ -7,13 +7,14 @@
   margin-bottom: 40px;
   border-radius: 15px;
   font-size: 20px;
+  position: inherit;
 }
 
 .search {
   display: flex;
-  width: 30vw;
+  width: 20vw;
   justify-content: flex-start;
-  padding-left: 6vw;
+  padding-left: 4.5vw;
   padding-bottom: 0%;
   padding-top: 6vw;
   align-items: center;

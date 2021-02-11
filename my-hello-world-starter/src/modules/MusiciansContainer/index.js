@@ -56,7 +56,10 @@ const MusiciansContainer = () => {
     })
   }
 
-  const posts = data.myQuery.nodes ? state.filteredMusicians : allMusicians
+  const posts = state.query
+    ? state.filteredMusicians
+    : allMusicians
+ 
 
   return (
     <>
@@ -70,7 +73,7 @@ const MusiciansContainer = () => {
           onChange={handleInputChange}
         />{" "}
       </div>
-      <section className={styles.imageParagraph}>
+      <section className={styles.imageParagraph} className="visible-class">
         <ul className={styles.list}>
           {posts.map(node => {
             return (
