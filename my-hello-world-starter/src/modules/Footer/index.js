@@ -23,14 +23,17 @@ const Footer = () => (
           <img
             src="https://github.com/sara9597/HCI-projekt/blob/master/my-hello-world-starter/src/images/instagram.png?raw=true"
             className={styles.icons}
+            alt="instagram"
           ></img>
           <img
             src="https://github.com/sara9597/HCI-projekt/blob/master/my-hello-world-starter/src/images/facebook.png?raw=true"
             className={styles.icons}
+            alt="facebook"
           ></img>
           <img
             src="https://github.com/sara9597/HCI-projekt/blob/master/my-hello-world-starter/src/images/twitter.png?raw=true"
             className={styles.icons}
+            alt="twitter"
           ></img>
           
         </div>

@@ -6,7 +6,7 @@ import Pages from "../components/Pages"
 const MusiciansPage = () => (
     <HeaderFooterLayout activeTab="MUSICIANS">
     <MusiciansContainer />
-    <Pages/>
+    <Pages activeTab ="1"/>
     </HeaderFooterLayout>
 )
 

@@ -64,7 +64,8 @@ const MusiciansContainer = () => {
   return (
     <>
       
-      <section className={styles.imageParagraph} className="visible-class"><div className={styles.search}>
+      <section className={styles.imageParagraph}>
+      <div className={styles.search}>
         <input
           className={styles.input}
           type="text"

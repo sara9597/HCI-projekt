@@ -42,9 +42,6 @@ const LoginForm = () => {
   return (
     <main
       className={styles.loginForm}
-      onKeyDown={key => {
-        if (key.key === "Enter") return submit()
-      }}
     >
       <section className={styles.form}>
         <form>
