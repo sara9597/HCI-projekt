@@ -33,3 +33,8 @@
 .navigationBar .active:hover {
   border-bottom: 3px solid #8f6a43;
 }
+
+@media screen and (max-width: 880px) {
+.navigationBar {
+  display: none;
+}}

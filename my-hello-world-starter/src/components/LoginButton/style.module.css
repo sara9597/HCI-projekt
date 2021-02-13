@@ -36,3 +36,16 @@
   cursor: pointer;
   border: 2px solid black;
 }
+
+@media screen and (max-width: 600px) {
+  .button1{
+    height: 32px;
+    width: 80px;
+  }
+  .button section {
+    font-size: 15px;
+  }
+  .button{
+    margin-right: 8px;
+  }
+  }
