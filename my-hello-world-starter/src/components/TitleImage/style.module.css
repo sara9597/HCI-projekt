@@ -2,6 +2,7 @@
   height: 500;
   width: 100%;
   transition: 0.5s ease-out; 
+  position: relative;
 }
 
 .titleImage span {
@@ -11,6 +12,8 @@
   font-weight: 700;
   border-bottom: white solid 1px;
   margin: 0px;
+  height: 80px;
+  width: 640px;
 }
 
 .titleImage button{
@@ -30,4 +33,26 @@
   background-color:rgba(136, 103, 67, 0.857);
   border:transparent;
   cursor: pointer;
+}
+
+
+@media screen and (max-width: 880px) {
+  .titleImage button{
+    height: 60px;
+    width: 580px;
+  }
+  .titleImage span {
+    height: 60px;
+    width: 580px;
+}}
+
+@media screen and (max-width: 800px) {
+  .titleImage button{
+    height: 50px;
+    width: 400px;
+  }
+  .titleImage span {
+    height: 50px;
+    width: 400px;
+  }
 }

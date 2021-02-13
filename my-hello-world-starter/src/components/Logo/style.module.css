@@ -20,7 +20,7 @@
   .logo{
     left:50%;
     transform: translateX(-50%);
-    position: fixed;
+    position: absolute;
   }
   }
   @media screen and (max-width: 580px) {
