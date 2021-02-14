@@ -9,11 +9,15 @@ const BlogPageContent = () => {
     query {
       myQuery: allContentfulBlogPost {
         nodes {
-          internal {
-            content
+          description {
+            internal {
+              content
+            }
+          }
+          body {
+            raw
           }
           title
-          description
           slug
           updatedAt
           image {
@@ -46,7 +50,7 @@ const BlogPageContent = () => {
                     <div className={styles.artHalf}>
                       <article>
                         <h2>{node.title}</h2>
-                        <p>{node.description}</p>
+                        <p>{node.description.internal.content}</p>
                         <section>
                              <button className={styles.button1}>See more</button>
                         </section>
