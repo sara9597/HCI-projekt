@@ -31,3 +31,8 @@
     transform: translate(-50%,-50%);
     }
   }
+  @media screen and (max-width: 350px) {
+    .logo{
+    display: none;
+    }
+  }
