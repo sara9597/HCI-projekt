@@ -1,11 +1,15 @@
 .container {
-    background-color: whitesmoke;
+    background-color:#F0F3F8;   
     display: flex;
     flex-flow: column;
     align-items: center;
-    padding: 0 100px;
+    padding: 50px 100px;
   }
-   
+
+  .container h2{
+    font-size: 30px;
+   }
+
   .container header {
     width: 100%;
     display: flex;
@@ -26,11 +30,12 @@
     font-weight: bold;
     cursor: pointer;
     box-shadow: 1px 1px 2px gray;
+    border-radius: 40px;
     padding: 2px 4px;
     background-color: white;
   }
-   
-  /* .container article {
+
+  .container article{
     line-height: 25px;
     font-size: 20px;
-  } */
+  }

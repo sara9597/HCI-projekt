@@ -16,7 +16,7 @@ exports.createPages = async ({ graphql, actions }) => {
         slug
         updatedAt
         image {
-          fixed(width: 380, height: 300) {
+          fixed(width: 360, height: 300) {
             src
             srcSet
             srcSetWebp
@@ -33,7 +33,8 @@ exports.createPages = async ({ graphql, actions }) => {
  
   const res = raw.data.allContentfulBlogPost.nodes
  
-  res.forEach((e, index, array) => actions.createPage({
+  res.forEach((e, index, array) =>
+  actions.createPage({
     component: path.resolve(`./src/Layouts/blog.js`),
     context: {
       ...e,
@@ -42,7 +43,8 @@ exports.createPages = async ({ graphql, actions }) => {
     },
     path: `post/${e.slug}`,
     slug: `post/${e.slug}`
-  }))
+  })
+)
 
 
     const ram = await graphql(`

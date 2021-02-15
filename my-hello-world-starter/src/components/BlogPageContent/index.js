@@ -21,7 +21,7 @@ const BlogPageContent = () => {
           slug
           updatedAt
           image {
-            fixed(width: 380, height: 300) {
+            fixed(width: 360, height: 300) {
               src
               srcSet
               srcSetWebp
