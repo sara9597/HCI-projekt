@@ -4,6 +4,8 @@
   justify-content: center;
   align-items: center;
   background-color:#F0F3F8; 
+  padding-left: 50px;
+  padding-right: 50px; 
 }
 
 .container h1{
@@ -22,12 +24,13 @@
 .containerContent{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content:space-between;
   align-items: center;
+  width: 100%;
 }
 
 .pageContent {
-  display: inline-flex;
+  justify-content: space-between;
 }
 
  .arrowleft{
@@ -61,10 +64,8 @@
   text-align: center;
 }
 
-
 .imageParagraph .imageHalf,
 .articleHalf {
-  min-width: 100%;
   height: 50%;
 }
 
@@ -101,17 +102,14 @@
 
 .list li {
   list-style: none;
-  margin: 5px 12px;
+  margin: 5px 10px;
   width: min-content;
   background-color: #ece7da;
   border: 2px solid #707070;
 }
 
-.list {
-  margin-top: 0%;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-template-rows: 1fr;
+.list{
+  display: flex;
+  flex-direction: row;
   gap: 2vw;
-  justify-items: center;
-} 
+}

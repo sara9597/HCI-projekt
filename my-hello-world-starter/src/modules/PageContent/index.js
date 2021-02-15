@@ -36,7 +36,7 @@ const PageContent = () => {
       <div className={styles.container}>
       <h1 className={styles.title}><span>OUR NEWEST MUSICIANS</span></h1>
       <div className={styles.containerContent}>
-        <p className={styles.arrowleft}></p>
+        <div className={styles.arrowleft}></div>
         <section className={styles.pageContent}>
           <ul className={styles.list}>
             {data.myQuery.nodes.map(node =>  {
@@ -64,7 +64,7 @@ const PageContent = () => {
             })}
              </ul>
                </section>
-              <p className={styles.arrowright}></p></div>
+              <div className={styles.arrowright}></div></div>
   	    </div>
     )
   }
