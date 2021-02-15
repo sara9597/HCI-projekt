@@ -1,34 +1,75 @@
-import React from "react"
+import React, { useState } from "react"
+import { useStaticQuery, graphql, Link } from "gatsby"
+import Img from "gatsby-image"
 import styles from "./style.module.css"
-import ImageParagraph from "../../components/ImageParagraph"
-import Elena from "../../components/Images/Elena"
-import Antony from "../../components/Images/Antony"
-import Nexus from "../../components/Images/Nexus"
 
-const firstText = `Solo singer whose
-energy makes up for 
-the whole orchestra.`
-
-const secondText = ` "Trumpet is my passion. 
-Enjoy my music and 
-feel the jazz vibe."`
-
-const thirdText = ` Get ready for the night
-of your life with this 
-most wanted band.`
-
-const PageContent = () => (
-  <div className={styles.container}>
-    <h1 className={styles.title}>OUR MOST POPULAR MUSICIANS</h1>
-    <div className={styles.containerContent}>
-      <p className={styles.arrowleft}></p>
+const PageContent = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      myQuery: allContentfulMusicianBox(skip: 0, limit: 3) {
+        nodes {
+          internal {
+            content
+          }
+          title
+          description
+          slug
+          updatedAt
+          image {
+            fixed(width: 280, height: 200) {
+              src
+              srcSet
+              srcSetWebp
+              srcWebp
+              width
+              height
+              base64
+              aspectRatio
+            }
+          }
+        }
+      }
+    }
+  `)
+    
+    return (   
+      <div className={styles.container}>
+      <h1 className={styles.title}><span>OUR NEWEST MUSICIANS</span></h1>
+      <div className={styles.containerContent}>
+        <p className={styles.arrowleft}></p>
         <section className={styles.pageContent}>
-          <ImageParagraph image={<Elena />} title="Elena" text={firstText} />
-          <ImageParagraph image={<Antony />} title="Antony" text={secondText} />
-          <ImageParagraph image={<Nexus />} title="Nexus band" text={thirdText} />
-        </section>
-       <p className={styles.arrowright}></p></div>
-  </div>
-)
+          <ul className={styles.list}>
+            {data.myQuery.nodes.map(node =>  {
+              return (
+                <Link to={`/post/${node.slug}`}>
+                  <section className={styles.imageParagraph}>
+                    <li>
+                      <div className={styles.imageHalf}>
+                        <Img fixed={node.image.fixed} />
+                        <div className={styles.articleHalf}>
+                          <article>
+                            <h2>{node.title}</h2>
+                            <p>{node.description}</p>
+                            <button className={styles.button1}>
+                              View profile
+                            </button>
+                          </article>
+                        </div>
+                      </div>
+                      <span>{node.internal.content}</span>
+                    </li>
+                  </section>
+                </Link>
+              )
+            })}
+             </ul>
+               </section>
+              <p className={styles.arrowright}></p></div>
+  	    </div>
+    )
+  }
+  
+  export default PageContent
 
-export default PageContent
+
+ 

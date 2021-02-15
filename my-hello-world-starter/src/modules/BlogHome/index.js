@@ -39,7 +39,7 @@ const BlogHome = () => {
 
   return (
 <div className={styles.container}>
- <h1 className={styles.title}>BLOG</h1>
+ <h1 className={styles.title}><span>RECENT BLOG ARTICLES</span></h1>
       <ul className={styles.list}>
         {data.myQuery.nodes.map(node => {
           return (

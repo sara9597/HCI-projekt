@@ -4,9 +4,11 @@
   font-weight: 400;
   font-size: 35px;
   text-align: left;
-  border-bottom: 1px solid #7a5834;
   margin-top: 50px;
-  width: 80px;
+}
+
+.title span{
+  border-bottom: 1px solid #7a5834;
 }
 
 .container{
@@ -15,7 +17,7 @@
   justify-content: left;
   background-color:#ECE5E5; 
   padding-left: 150px;
-  padding-right: 150px;
+  padding-right: 150px; 
 }
 
 .button1:hover {
