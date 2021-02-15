@@ -31,31 +31,9 @@
 
 .pageContent {
   justify-content: space-between;
+  width: 100%;
+  object-fit: cover
 }
-
- .arrowleft{
-  border: solid #7a5834;
-  border-width: 0 8px 8px 0;
-  display: inline-block;
-  padding: 3px;
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-}
-
-.arrowright {
-  border: solid #7a5834;
-  border-width: 0 8px 8px 0;
-  display: inline-block;
-  padding: 3px;
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-} 
 
 .imageParagraph h2 {
   text-align: center;

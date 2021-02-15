@@ -2,11 +2,18 @@ import React, { useState } from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 import styles from "./style.module.css"
+import Carousel from 'react-elastic-carousel'
+
+const breakPoints = [
+  { width: 550, itemsToShow: 1 },
+  { width: 768, itemsToShow: 2 },
+  { width: 1100, itemsToShow: 3 }
+];
 
 const PageContent = () => {
   const data = useStaticQuery(graphql`
     query {
-      myQuery: allContentfulMusicianBox(skip: 0, limit: 3) {
+      myQuery: allContentfulMusicianBox(skip: 0, limit: 4) {
         nodes {
           internal {
             content
@@ -36,9 +43,10 @@ const PageContent = () => {
       <div className={styles.container}>
       <h1 className={styles.title}><span>OUR NEWEST MUSICIANS</span></h1>
       <div className={styles.containerContent}>
-        <div className={styles.arrowleft}></div>
         <section className={styles.pageContent}>
+    
           <ul className={styles.list}>
+          <Carousel breakPoints={breakPoints}>
             {data.myQuery.nodes.map(node =>  {
               return (
                 <Link to={`/post/${node.slug}`}>
@@ -62,14 +70,14 @@ const PageContent = () => {
                 </Link>
               )
             })}
+             </Carousel>
              </ul>
+            
+          
                </section>
-              <div className={styles.arrowright}></div></div>
+              </div>
   	    </div>
     )
   }
-  
+
   export default PageContent
-
-
- 
