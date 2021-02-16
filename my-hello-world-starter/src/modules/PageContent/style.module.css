@@ -52,11 +52,13 @@
   margin: 0 auto;
   letter-spacing: 0.2px;
   margin-bottom: 20%;
+  padding-bottom: 35px;
 }
 
 .imageHalf div,
 .imageHalf div div {
   width: 100%;
+  border-radius: 5px 5px 0 0;
 }
 
 .button1:hover {
@@ -83,7 +85,12 @@
   margin: 5px 10px;
   width: min-content;
   background-color: #ece7da;
-  border: 2px solid #707070;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+
+.list li:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .list{

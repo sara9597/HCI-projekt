@@ -44,7 +44,6 @@ const PageContent = () => {
       <h1 className={styles.title}><span>OUR NEWEST MUSICIANS</span></h1>
       <div className={styles.containerContent}>
         <section className={styles.pageContent}>
-    
           <ul className={styles.list}>
           <Carousel breakPoints={breakPoints}>
             {data.myQuery.nodes.map(node =>  {
@@ -71,9 +70,7 @@ const PageContent = () => {
               )
             })}
              </Carousel>
-             </ul>
-            
-          
+             </ul>          
                </section>
               </div>
   	    </div>
