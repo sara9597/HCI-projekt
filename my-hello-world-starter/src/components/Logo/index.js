@@ -1,6 +1,5 @@
 import React from "react"
 import styles from "./style.module.css"
-import { Link } from "react-router"
 
 const Logo = () => (
   <div className={styles.logo}>

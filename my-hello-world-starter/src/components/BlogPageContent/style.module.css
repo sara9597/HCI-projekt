@@ -37,17 +37,15 @@
    text-align: right;
   }
 
-   .blogParagraph{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   }
-
    .imgHalf {
     display: flex;
     flex-direction: row;
     background-color: white;
     margin-bottom: 70px;
+   }
+   
+   .list{
+     padding-left: 0px;
    }
 
    .imgHalf div,
@@ -59,7 +57,6 @@
 
    .img{
     width: 35%;
-    transition: 0.5s ease-out; 
    } 
 
    .artHalf article{
@@ -78,8 +75,15 @@
   .imgHalf {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 5px;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
     }
     
-    .imgHalf:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  .imgHalf:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.707);
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.05);
     }
+    
