@@ -1,5 +1,6 @@
 import React from "react"
 import styles from "./style.module.css"
+import { Link } from "gatsby"
 
 const AboutUs = () => (
   <section className={styles.about}>
@@ -12,7 +13,9 @@ const AboutUs = () => (
       <br />
       <br />
       If you are a musician and want to be a part of our community
-      <span onClick ={() => window.open("/join", "_self")}> JOIN </span> us!
+      <Link to="/join">
+        <span> JOIN </span> us!
+      </Link>
     </div>
   </section>
 )

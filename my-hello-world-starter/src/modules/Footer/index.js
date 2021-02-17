@@ -1,5 +1,4 @@
 import React from "react"
-import Logo from "../../components/Logo"
 import styles from "./style.module.css"
 
 const Footer = () => (
@@ -7,8 +6,11 @@ const Footer = () => (
     <ul className={styles.left}>
       <li className={styles.rights}>©2020 by MusicAgent </li>
       <li className={styles.logo}>
-        {" "}
-        <Logo />{" "}
+      <img
+      src="https://github.com/sara9597/HCI-projekt/blob/master/my-hello-world-starter/src/images/Logo.png?raw=true"
+      className={styles.icon}
+      onClick={() => window.open("/", "_self")}
+    ></img>
       </li>
     </ul>
     <ul className={styles.address}>
@@ -17,7 +19,6 @@ const Footer = () => (
       <li className={styles.phone}>234-432</li>
     </ul>
     <ul className={styles.follow}>
-      <li>Follow us:</li>
       <li>
         <div>
           <img

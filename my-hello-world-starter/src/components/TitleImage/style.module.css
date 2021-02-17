@@ -5,15 +5,8 @@
   position: relative;
 }
 
-.titleImage span {
-  font-size: 60px;
-  text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  color: white;
-  font-weight: 700;
-  border-bottom: white solid 1px;
-  margin: 0px;
-  height: 80px;
-  width: 640px;
+.titleImage button:hover {
+  transition: all 0.3s ease-in-out;
 }
 
 .titleImage button{
@@ -27,6 +20,10 @@
   top: 30%;
   left: 50%;
   transform: translateX(-50%);
+  font-size: 60px;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  color: white;
+  font-weight: 700;
 }
 
 .titleImage button:hover {
@@ -39,20 +36,54 @@
 @media screen and (max-width: 880px) {
   .titleImage button{
     height: 60px;
-    width: 580px;
-  }
-  .titleImage span {
-    height: 60px;
-    width: 580px;
+    width: 540px;
+    font-size: 50px;
 }}
 
 @media screen and (max-width: 800px) {
   .titleImage button{
     height: 50px;
-    width: 400px;
+    width: 390px;
+    font-size: 37px;
   }
-  .titleImage span {
-    height: 50px;
-    width: 400px;
+}
+
+@media screen and (max-width: 570px) {
+  .titleImage button{
+    height: 45px;
+    width: 340px;
+    font-size: 31px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .titleImage button{
+    height: 40px;
+    width: 310px;
+    font-size: 29px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .titleImage button{
+    height: 30px;
+    width: 260px;
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .titleImage button{
+    height: 28px;
+    width: 240px;
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .titleImage button{
+    height: 25px;
+    width: 200px;
+    font-size: 19px;
   }
 }
