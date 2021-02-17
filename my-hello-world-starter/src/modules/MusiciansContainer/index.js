@@ -47,7 +47,9 @@ const MusiciansContainer = () => {
     { genre: "Pop" },
     { genre: "Rock" },
     { genre: "House" },
-    { genre: "Jazz" }
+    { genre: "Jazz" },
+    { genre: "Funk" },
+    { genre: "Classic" }
   ]
   const allMusicians = data.myQuery.nodes
 
@@ -96,14 +98,7 @@ const MusiciansContainer = () => {
     <>
       <section className={styles.imageParagraph}>
         {" "}
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            paddingTop: "2vw",
-            justifyContent: "space-between"
-          }}
-        >
+        <div className={styles.filters}>
           <div className={styles.search}>
             <input
               className={styles.input}
@@ -114,20 +109,15 @@ const MusiciansContainer = () => {
               onChange={handleInputChange}
             />{" "}
           </div>
-          <div>
-            <FormControl>
+          <div className={styles.form}>
+            <FormControl style={{ display: "flex", flexDirection: "column" }}>
               <FormLabel
-                style={{ paddingLeft: "7.3vw", color: "rgb(143, 106, 67)" }}
+                className={styles.formLabel}
+                style={{ paddingLeft: "7.3vw" }}
               >
-                Filter by genre:
+                <strong>Filter By Genre:</strong>
               </FormLabel>
-              <FormGroup
-                style={{
-                  display: "flex",
-                  flexDirection: "row",
-                  paddingLeft: "7.3vw"
-                }}
-              >
+              <FormGroup className={styles.formGroup}>
                 {movie.map(movie => (
                   <FormControlLabel
                     control={

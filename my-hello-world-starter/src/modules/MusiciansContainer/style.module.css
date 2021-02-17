@@ -8,12 +8,23 @@
   border-radius: 15px;
   font-size: 150%;
   position: relative;
-  min-width: 300px;
+  min-width: 150px;
+}
+@media screen and (max-width: 1136px) {
+  .input {
+    font-size: 140%;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .input {
+    font-size: 120%;
+  }
 }
 
 .search {
   display: flex;
-  width: 20vw;
+  width: 23vw;
   justify-content: flex-start;
   padding-left: 4.5vw;
   padding-bottom: 0%;
@@ -92,6 +103,10 @@
 
 .list li:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.707);
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.05);
 }
 
 .list {
@@ -101,4 +116,33 @@
   grid-template-rows: 1fr;
   gap: 2vw;
   justify-items: center;
+}
+
+.filters {
+  display: flex;
+  flex-direction: row;
+  padding-top: 2vw;
+  flex-wrap: wrap;
+}
+
+.formLabel {
+  color: rgb(143, 106, 67) !important;
+  padding-left: 7.3vw;
+  font-weight: bold;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: row !important;
+  padding-left: 7.3vw;
+}
+.form {
+  display: grid;
+  justify-content: center;
+}
+@media screen and (max-width: 940px) {
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+  }
 }
