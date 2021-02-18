@@ -21,15 +21,8 @@ const BlogPageContent = () => {
           slug
           updatedAt
           image {
-            fixed(width: 360, height: 300) {
+            fluid(maxWidth: 300, maxHeight: 300, quality: 100) {
               src
-              srcSet
-              srcSetWebp
-              srcWebp
-              width
-              height
-              base64
-              aspectRatio
             }
           }
         }
@@ -46,7 +39,7 @@ const BlogPageContent = () => {
             <Link to={`/post/${node.slug}`}>
               <div className={styles.blogParagraph}>
                   <div className={styles.imgHalf}>
-                    <Img fixed={node.image.fixed} />
+                    <Img fluid={node.image.fluid} />
                     <div className={styles.artHalf}>
                       <article>
                         <h2>{node.title}</h2>

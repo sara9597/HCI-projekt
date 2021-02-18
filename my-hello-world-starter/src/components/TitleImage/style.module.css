@@ -5,10 +5,6 @@
   position: relative;
 }
 
-.titleImage button:hover {
-  transition: all 0.3s ease-in-out;
-}
-
 .titleImage button{
   border-radius: 40px;
   background-color:rgba(143,106,67,0.5);
@@ -30,6 +26,7 @@
   background-color:rgba(136, 103, 67, 0.857);
   border:transparent;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
 

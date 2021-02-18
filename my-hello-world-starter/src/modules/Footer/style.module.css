@@ -98,7 +98,11 @@
     }
 
     @media screen and (max-width: 510px) {
-     
+      .address {
+      width: 140;
+      height: 95;
+      
+      }
       .address li{
         font-size: 14px;
       }
