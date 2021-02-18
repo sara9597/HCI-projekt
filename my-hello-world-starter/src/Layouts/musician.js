@@ -6,7 +6,7 @@ import styles from "./musician.module.css"
 import HeaderFooterLayout from "../layouts/headerFooter"
 
 const MusicianPost = ({ pageContext }) => {
-  const {body, title, image, description , next, prev } = pageContext
+  const { body, title, image, next, prev } = pageContext
 
   return (
     <HeaderFooterLayout>
@@ -25,9 +25,7 @@ const MusicianPost = ({ pageContext }) => {
           )}
         </header>
         <Img fixed={image.fixed} />
-        <article>
-          {renderRichText(body)}
-        </article>
+        <article>{renderRichText(body)}</article>
       </main>
     </HeaderFooterLayout>
   )

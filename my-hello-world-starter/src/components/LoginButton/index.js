@@ -20,7 +20,6 @@ const LoginButton = () => (
                 : () => {}
             }
           >
-            {console.log(loggedIn())}
             {loggedIn() ? "LOGOUT" : "LOGIN"}
           </section>
         </Link>

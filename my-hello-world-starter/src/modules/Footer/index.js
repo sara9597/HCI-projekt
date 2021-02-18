@@ -6,11 +6,13 @@ const Footer = () => (
     <ul className={styles.left}>
       <li className={styles.rights}>©2020 by MusicAgent </li>
       <li className={styles.logo}>
-      <img
-      src="https://github.com/sara9597/HCI-projekt/blob/master/my-hello-world-starter/src/images/Logo.png?raw=true"
-      className={styles.icon}
-      onClick={() => window.open("/", "_self")}
-    ></img>
+        <img
+          src="https://github.com/sara9597/HCI-projekt/blob/master/my-hello-world-starter/src/images/Logo.png?raw=true"
+          className={styles.icon}
+          onClick={() => window.open("/", "_self")}
+          onKeyDown={() => window.open("/", "_self")}
+          alt="logo"
+        ></img>
       </li>
     </ul>
     <ul className={styles.address}>
@@ -36,7 +38,6 @@ const Footer = () => (
             className={styles.icons}
             alt="twitter"
           ></img>
-          
         </div>
       </li>
     </ul>

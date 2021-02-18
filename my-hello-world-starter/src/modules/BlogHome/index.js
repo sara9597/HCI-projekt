@@ -38,7 +38,7 @@ const BlogHome = () => {
       <ul className={styles.list}>
         {data.myQuery.nodes.map(node => {
           return (
-            <Link to={`/post/${node.slug}`}>
+            <Link to={`/post/${node.slug}`} key={node.title}>
               <div className={styles.blogParagraph}>
                 <div className={styles.imgHalf}>
                   <Img fluid={node.image.fluid} />

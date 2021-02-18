@@ -7,6 +7,7 @@ const Logo = () => (
       src="https://github.com/sara9597/HCI-projekt/blob/master/my-hello-world-starter/src/images/Logo.png?raw=true"
       className={styles.icon}
       onClick={() => window.open("/", "_self")}
+      alt="logo"
     ></img>
   </div>
 )
