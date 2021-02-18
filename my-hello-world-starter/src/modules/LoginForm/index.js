@@ -7,11 +7,11 @@ import { myLocalStorage } from "../../pages/helper"
 
 const users = [
   {
-    email: "mate@gmail.com",
+    email: "sara@gmail.com",
     password: "123"
   },
   {
-    email: "jure",
+    email: "karla@gmail.com",
     password: "123"
   }
 ]
@@ -29,20 +29,21 @@ const LoginForm = () => {
       const loginSuccessful = !!users.find(
         user => user.email === email && user.password === password
       )
+
       setLoading(false)
       if (loginSuccessful) {
         myLocalStorage.setItem("loggedIn", email)
 
         setError("Success")
-        return navigate("/")
+        return navigate("/musicians")
       }
+
       setError("Wrong email or password")
     }, 2000)
   }
+
   return (
-    <main
-      className={styles.loginForm}
-    >
+    <main className={styles.loginForm}>
       <section className={styles.form}>
         <form>
           <div>
@@ -75,8 +76,16 @@ const LoginForm = () => {
             {error}
           </p>
           <div className={style.button}>
-            <button className={styles.button1} onClick={() => submit()}>
-              {loading ? "Loading..." : <section>LOGIN</section>}
+            <button
+              className={styles.button1}
+              type="button"
+              onClick={() => submit()}
+            >
+              {loading ? (
+                <section>Loading...</section>
+              ) : (
+                <section>LOGIN</section>
+              )}
             </button>
           </div>
 

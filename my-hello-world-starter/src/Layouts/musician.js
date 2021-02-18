@@ -1,12 +1,12 @@
 import React from "react"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
-
+import { renderRichText } from "gatsby-source-contentful/rich-text"
 import styles from "./musician.module.css"
 import HeaderFooterLayout from "../layouts/headerFooter"
 
 const MusicianPost = ({ pageContext }) => {
-  const { title, image, description , next, prev } = pageContext
+  const {body, title, image, description , next, prev } = pageContext
 
   return (
     <HeaderFooterLayout>
@@ -26,7 +26,7 @@ const MusicianPost = ({ pageContext }) => {
         </header>
         <Img fixed={image.fixed} />
         <article>
-        {description}
+          {renderRichText(body)}
         </article>
       </main>
     </HeaderFooterLayout>
