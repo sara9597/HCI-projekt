@@ -43,7 +43,12 @@ const LoginForm = () => {
   }
 
   return (
-    <main className={styles.loginForm}>
+    <main
+      className={styles.loginForm}
+      onKeyDown={key => {
+        if (key.key === "Enter") return submit()
+      }}
+    >
       <section className={styles.form}>
         <form>
           <div>
@@ -80,6 +85,7 @@ const LoginForm = () => {
               className={styles.button1}
               type="button"
               onClick={() => submit()}
+              onKeyDown={() => submit()}
             >
               {loading ? (
                 <section>Loading...</section>
@@ -94,6 +100,9 @@ const LoginForm = () => {
             <strong
               className={styles.join1}
               onClick={() => window.open("/join", "_self")}
+              role="link"
+              tabIndex={0}
+              onKeyDown={() => window.open("/join", "_self")}
             >
               JOIN{" "}
             </strong>{" "}

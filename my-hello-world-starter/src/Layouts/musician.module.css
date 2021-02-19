@@ -1,41 +1,47 @@
 .container {
-    background-color:#F0F3F8;   
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    padding: 50px 100px;
-  }
+  background-color: #f0f3f8;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 50px 100px;
+}
 
-  .container h2{
-    font-size: 30px;
-   }
+.container h2 {
+  font-size: 30px;
+}
 
-  .container header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-   
-  .container .headerTwo {
-    width: 52vw;
-    margin-left: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-   
-  .container header span {
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 1px 1px 2px gray;
-    border-radius: 40px;
-    padding: 2px 4px;
-    background-color: white;
-  }
+.container header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .container article{
-    line-height: 25px;
-    font-size: 20px;
-  }
+.container .headerTwo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container header span {
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 1px 1px 2px gray;
+  border-radius: 40px;
+  padding: 2px 4px;
+  background-color: white;
+}
+
+.container article {
+  line-height: 25px;
+  font-size: 20px;
+}
+
+.text {
+  width: 70%;
+}
+
+.fixed {
+}

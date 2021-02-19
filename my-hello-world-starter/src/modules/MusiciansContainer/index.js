@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 import styles from "./style.module.css"
@@ -120,6 +120,7 @@ const MusiciansContainer = () => {
               <FormGroup className={styles.formGroup}>
                 {movie.map(movie => (
                   <FormControlLabel
+                    key={movie.genre}
                     control={
                       <Checkbox
                         onChange={handleChange}
@@ -137,9 +138,9 @@ const MusiciansContainer = () => {
         <ul className={styles.list}>
           {posts.map(node => {
             return (
-              <Link to={`/post/${node.slug}`}>
+              <Link to={`/post/${node.slug}`} key={node.slug}>
                 <section className={styles.imageParagraph}>
-                  <li>
+                  <li key={node.title}>
                     <div className={styles.imageHalf}>
                       <Img fixed={node.image.fixed} />
                       <div className={styles.articleHalf}>
