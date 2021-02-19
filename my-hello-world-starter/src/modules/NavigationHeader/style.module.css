@@ -3,21 +3,4 @@
   display: flex;
   justify-content: space-between;
 }
-.menuIcon{
-  display: none;
-}
-
-@media screen and (max-width: 880px) {
-  .menuIcon{
-    display: flex;
-    flex-flow: column;
-    width: fit-content;
-    height: 50px;
-    padding: 13px;
-    margin-left: 20px;
-    margin-top: 10px;
-    cursor: pointer;
-    transform: scale(1.4);
-  }
-  }
   
