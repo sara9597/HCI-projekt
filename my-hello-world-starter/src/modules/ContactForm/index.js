@@ -5,7 +5,6 @@ import style from "../../components/LoginButton/style.module.css"
 
 const ContactForm = () => (
   <main className={styles.contactForm}>
-    
     <div className={styles.box}>
       <div className="contactBox">
         <section className={styles.contactInfo}>
@@ -15,7 +14,7 @@ const ContactForm = () => (
           <p>123-456-7890</p>
         </section>
       </div>
-      <section className={styles.form}>
+      <section className={styles.form1}>
         <form>
           <div>
             <input name="name" type="text" placeholder="Name*" />
