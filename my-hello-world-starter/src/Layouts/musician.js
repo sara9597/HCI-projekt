@@ -5,12 +5,17 @@ import { renderRichText } from "gatsby-source-contentful/rich-text"
 import styles from "./musician.module.css"
 import HeaderFooterLayout from "../layouts/headerFooter"
 import { style } from "@material-ui/system"
+import CoverImage from "../components/Images/CoverImage"
 
 const MusicianPost = ({ pageContext }) => {
   const { body, title, description, image, next, prev } = pageContext
 
   return (
     <HeaderFooterLayout>
+      {" "}
+      <div className = {styles.coverImage} style={{ background: "rgba(91, 11, 11, 0.35) linear- gradient(360deg, rgb(255, 255, 255) 0 %, rgba(255, 255, 255, 0) 7.66 %) repeat scroll 0% 0%"}}>
+      <CoverImage />
+      </div>
       <main className={styles.container}>
         <header className={!prev || !next ? styles.headerTwo : ""}>
           {prev && (
@@ -28,7 +33,6 @@ const MusicianPost = ({ pageContext }) => {
           )}
         </header>
 
-        <Img fixed={image.fixed} />
         <article className={styles.text}>{renderRichText(body)}</article>
       </main>
     </HeaderFooterLayout>
