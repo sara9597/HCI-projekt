@@ -51,6 +51,11 @@
   margin: 10px;
 }
 
+.icons{
+transition: all 0.3s ease-in-out;
+transform: scale(1.05);
+}
+
 .logo {
   display: flex;
   flex-flow: column;
@@ -117,4 +122,29 @@
         font-size: 11px;
       }
 
+    }
+    @media screen and (max-width: 475px) {
+      .footer{
+        flex-flow: column;
+        align-items: center;
+      }
+
+      .footer .address{
+        display: none;
+      }
+
+      .icons {
+        width: 25px;
+        height: 25px;
+        }
+      .follow{
+        margin-top: -5px;
+        margin-top: 0px;
+      }
+      .rights{
+      margin-left: 13px;
+      }
+      .logo{
+        margin-bottom: -8px;
+      }
     }

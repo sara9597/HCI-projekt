@@ -1,5 +1,6 @@
 import React from "react"
 import styles from "./style.module.css"
+import { Link } from "gatsby"
 
 const Footer = () => (
   <footer className={styles.footer}>
@@ -23,21 +24,27 @@ const Footer = () => (
     <ul className={styles.follow}>
       <li>
         <div>
-          <img
-            src="https://github.com/sara9597/HCI-projekt/blob/master/my-hello-world-starter/src/images/instagram.png?raw=true"
-            className={styles.icons}
-            alt="instagram"
-          ></img>
-          <img
-            src="https://github.com/sara9597/HCI-projekt/blob/master/my-hello-world-starter/src/images/facebook.png?raw=true"
-            className={styles.icons}
-            alt="facebook"
-          ></img>
-          <img
-            src="https://github.com/sara9597/HCI-projekt/blob/master/my-hello-world-starter/src/images/twitter.png?raw=true"
-            className={styles.icons}
-            alt="twitter"
-          ></img>
+          <Link to="/404">
+            <img
+              src="https://github.com/sara9597/HCI-projekt/blob/master/my-hello-world-starter/src/images/instagram.png?raw=true"
+              className={styles.icons}
+              alt="instagram"
+            ></img>
+          </Link>
+          <Link to="/404">
+            <img
+              src="https://github.com/sara9597/HCI-projekt/blob/master/my-hello-world-starter/src/images/facebook.png?raw=true"
+              className={styles.icons}
+              alt="facebook"
+            ></img>
+          </Link>
+          <Link to="/404">
+            <img
+              src="https://github.com/sara9597/HCI-projekt/blob/master/my-hello-world-starter/src/images/twitter.png?raw=true"
+              className={styles.icons}
+              alt="twitter"
+            ></img>
+          </Link>
         </div>
       </li>
     </ul>
