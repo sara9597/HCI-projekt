@@ -27,15 +27,8 @@ const MusiciansContainer = () => {
           genre
           updatedAt
           image {
-            fixed(width: 280, height: 200) {
+            fluid(maxWidth: 300, maxHeight: 300, quality: 100) {
               src
-              srcSet
-              srcSetWebp
-              srcWebp
-              width
-              height
-              base64
-              aspectRatio
             }
           }
         }
@@ -142,7 +135,7 @@ const MusiciansContainer = () => {
                 <section className={styles.imageParagraph}>
                   <li key={node.title}>
                     <div className={styles.imageHalf}>
-                      <Img fixed={node.image.fixed} />
+                      <img src={node.image.fluid.src} />
                       <div className={styles.articleHalf}>
                         <article>
                           <h2>{node.title}</h2>

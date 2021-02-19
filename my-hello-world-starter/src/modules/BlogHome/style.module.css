@@ -5,6 +5,7 @@
   font-size: 35px;
   text-align: left;
   margin-top: 50px;
+  margin-bottom: 0px;
 }
 
 .title span{
@@ -90,6 +91,28 @@ transition: all 0.3s ease-in-out;
 transform: scale(1.05);
 }
 
+@media only screen and (max-width: 1005px) {
+  .imgHalf {
+    display: flex;
+    flex-direction: column;
+  }
+  .artHalf section{
+    text-align: center;
+  }
+
+  .artHalf article{
+    padding: 20px 40px 20px 40px;
+  }
+
+  .artHalf p{
+    text-align: justify;
+  }
+  
+   .blogParagraph h2{
+   text-align: center;
+   }
+  }
+
 @media screen and (max-width: 800px) {
   .title{
   font-size: 32px;
@@ -110,3 +133,83 @@ transform: scale(1.05);
   padding-right: 50px; 
   }
 }
+
+
+@media only screen and (max-width: 1005px) {
+  .imgHalf {
+    display: flex;
+    flex-direction: column;
+  }
+  .artHalf section{
+    text-align: center;
+  }
+
+  .artHalf p{
+    text-align: justify;
+  }
+   .blogParagraph h2{
+   text-align: center;
+   }
+  }
+  
+  @media screen and (max-width: 800px) {
+    .title{
+    font-size: 32px;
+    }
+  }
+  
+  @media only screen and (max-width: 665px) {
+    .container{
+      padding-left: 120px;
+      padding-right: 120px; 
+    }
+    .artHalf section{
+      font-size: 17px;
+    }
+  }
+  
+  @media only screen and (max-width: 560px) {
+    .container{
+      padding-left: 100px;
+      padding-right: 100px; 
+    }
+  
+    .artHalf section{
+      font-size: 16px;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .container{
+    padding-left: 80px;
+    padding-right: 80px;
+    }
+  }
+  
+  @media only screen and (max-width: 465px) {
+    .container{
+    padding-left: 50px;
+    padding-right: 50px;
+    }
+  }
+  
+  @media only screen and (max-width: 395px) {
+    .container{
+    padding-left: 30px;
+    padding-right: 30px;
+    }
+  }
+  
+  @media only screen and (max-width: 360px) {
+    .container{
+    padding-left: 30px;
+    padding-right: 30px;
+    }
+  }
+  
+  @media only screen and (max-width: 340px) {
+    .container{
+    padding-left: 25px;
+    padding-right: 25px;
+    }
+  }

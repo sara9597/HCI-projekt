@@ -39,7 +39,7 @@ const BlogPageContent = () => {
             <Link to={`/post/${node.slug}`} key={node.slug}>
               <div className={styles.blogParagraph}>
                 <div className={styles.imgHalf}>
-                  <Img fluid={node.image.fluid} />
+                  <img src={node.image.fluid.src} />
                   <div className={styles.artHalf}>
                     <article>
                       <h2>{node.title}</h2>
