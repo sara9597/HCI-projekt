@@ -80,7 +80,7 @@ const LoginForm = () => {
           >
             {error}
           </p>
-          <div className={style.button}>
+          <div className={styles.button}>
             <button
               className={styles.button1}
               type="button"
