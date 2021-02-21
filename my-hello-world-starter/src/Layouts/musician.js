@@ -13,9 +13,7 @@ const MusicianPost = ({ pageContext }) => {
   return (
     <HeaderFooterLayout>
       {" "}
-      <div className = {styles.coverImage} style={{ background: "rgba(91, 11, 11, 0.35) linear- gradient(360deg, rgb(255, 255, 255) 0 %, rgba(255, 255, 255, 0) 7.66 %) repeat scroll 0% 0%"}}>
-      <CoverImage />
-      </div>
+      
       <main className={styles.container}>
         <header className={!prev || !next ? styles.headerTwo : ""}>
           {prev && (
@@ -24,6 +22,7 @@ const MusicianPost = ({ pageContext }) => {
             </Link>
           )}
 
+{image}
           <h2>{title}</h2>
 
           {next && (

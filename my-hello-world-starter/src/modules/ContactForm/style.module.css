@@ -43,12 +43,34 @@
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 494px) {
   .contactForm h2 {
-    font-size: 30px !important;
+    font-size: 25px !important;
+    padding-bottom: 0px !important;
+  }
+  .box {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
   }
 }
 
+@media screen and (max-width: 428px) {
+  .contactInfo {
+    padding-left: 20px !important;
+  }
+  .contactInfo h2 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 365px) {
+  .contactInfo {
+    padding-left: 0px !important;
+  }
+  .contactInfo h2 {
+    font-size: 23px !important;
+  }
+}
 .contactForm h2 {
   text-transform: uppercase;
   color: #70614a;
