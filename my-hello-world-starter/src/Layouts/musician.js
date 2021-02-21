@@ -21,8 +21,7 @@ const MusicianPost = ({ pageContext }) => {
               <span style={{ float: "left" }}>Previous</span>
             </Link>
           )}
-
-{image}
+          
           <h2>{title}</h2>
 
           {next && (
@@ -31,7 +30,7 @@ const MusicianPost = ({ pageContext }) => {
             </Link>
           )}
         </header>
-
+<Img fixed={image.fixed} />
         <article className={styles.text}>{renderRichText(body)}</article>
       </main>
     </HeaderFooterLayout>

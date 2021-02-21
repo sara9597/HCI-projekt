@@ -18,7 +18,8 @@
 }
 
 .container .headerTwo {
-  width: 100%;
+  width: 48vw;
+  margin-left: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -41,14 +42,4 @@
 
 .text {
   width: 70%;
-}
-
-.fixed {
-}
-
-.coverImage {
-  background: rgba(91, 11, 11, 0.35)
-    linear-gradient(360deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 7.66%)
-    repeat scroll 0% 0%;
-    
 }

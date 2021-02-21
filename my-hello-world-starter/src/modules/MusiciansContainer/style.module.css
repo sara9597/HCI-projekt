@@ -30,7 +30,7 @@
   padding-bottom: 0%;
   padding-top: 3vw;
   align-items: center;
-  height: 40px;
+  height: 50px;
 }
 
 .search :focus {
@@ -111,6 +111,7 @@
 
 .list {
   margin-top: 0%;
+  padding: 0%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-template-rows: 1fr;
@@ -120,8 +121,8 @@
 
 .filters {
   display: flex;
-  flex-direction: row;
-  padding-top: 2vw;
+  flex-direction: column-reverse;
+  padding: 3vw;
   flex-wrap: wrap;
 }
 
@@ -139,10 +140,29 @@
 .form {
   display: grid;
   justify-content: center;
+  border: 2px solid rgb(143, 106, 67);
+  border-radius: 2vw;
+  padding: 2vw;
+  margin: auto;
 }
 @media screen and (max-width: 940px) {
   .formGroup {
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .search {
+    padding-top: 7vw;
+  }
+}
+
+@media screen and (max-width: 873px) {
+  .filters {
+    flex-direction: column-reverse;
+  }
+  .input {
+    margin-bottom: 0px;
   }
 }
