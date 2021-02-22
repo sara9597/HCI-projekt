@@ -15,6 +15,7 @@ const Toggle = styled.div`
 
   @media (max-width: 880px) {
     display: flex;
+    z-index: 5;
   }
 `
 
@@ -38,7 +39,7 @@ const Navbox = styled.div`
     background-color: #dfc7dc;
     transition: all 0.3s ease-in;
     top: 8vh;
-    margin-top: 8px;
+    margin-top: -15px;
     left: ${props => (props.open ? "-100%" : "0")};
   }
 `
@@ -50,6 +51,7 @@ const Hamburger = styled.div`
   transition: all 0.3s linear;
   align-self: center;
   position: relative;
+  
   transform: ${props => (props.open ? "rotate(-45deg)" : "inherit")};
 
   ::before,

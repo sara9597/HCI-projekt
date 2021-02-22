@@ -1,6 +1,5 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import Img from "gatsby-image"
 import styles from "./style.module.css"
 import Carousel from "react-elastic-carousel"
 
@@ -40,7 +39,7 @@ const PageContent = () => {
       <div className={styles.containerContent}>
         <section className={styles.pageContent}>
           <ul className={styles.list}>
-            <Carousel breakPoints={breakPoints}>
+            <Carousel className={styles.slide} breakPoints={breakPoints}>
               {data.myQuery.nodes.map(node => {
                 return (
                   <Link to={`/post/${node.slug}`} key={node.slug}>
