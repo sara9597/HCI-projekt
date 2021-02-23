@@ -16,9 +16,13 @@
     font-size: 30px;
    }
 
-  .container .headerTwo {
+   h2{
+    margin-left: 10px;
+    margin-right: 10px;
+   }
+
+   .container .headerTwo {
     width: 52vw;
-    margin-left: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,6 +37,11 @@
     padding: 3px 5px;
     background-color: white;
   }
+
+  .container header span:hover {
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.707);
+    transition: all 0.3s ease-in-out;
+  }
    
   .container article {
     line-height: 25px;
@@ -43,7 +52,25 @@
     .container article {
       font-size: 16px;
     }
+    .container h2 {
+      font-size: 21px;
+    }
       .container {
-        padding: 15px 10px 20px 15px;
+        padding: 15px 40px 15px 40px;
       }
     }
+
+    @media only screen and (max-width: 400px) {
+      .container h2 {
+        font-size: 19px;
+      }
+
+      .container {
+        padding-left: 35px;
+        padding-right: 35px;
+      }
+
+      .container header span {
+        font-size: 16px;
+      }
+      }
