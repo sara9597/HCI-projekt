@@ -38,7 +38,7 @@ const LoginForm = () => {
         return navigate("/musicians")
       }
 
-      setError("Wrong email or password")
+      setError("Wrong email or password, please try again")
     }, 2000)
   }
 

@@ -16,6 +16,7 @@ const Toggle = styled.div`
   @media (max-width: 880px) {
     display: flex;
     z-index: 5;
+    padding-left: 40px;
   }
 `
 

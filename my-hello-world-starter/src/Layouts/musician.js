@@ -4,8 +4,6 @@ import { Link } from "gatsby"
 import { renderRichText } from "gatsby-source-contentful/rich-text"
 import styles from "./musician.module.css"
 import HeaderFooterLayout from "../layouts/headerFooter"
-import { style } from "@material-ui/system"
-import CoverImage from "../components/Images/CoverImage"
 
 const MusicianPost = ({ pageContext }) => {
   const { body, title, description, image, next, prev } = pageContext
