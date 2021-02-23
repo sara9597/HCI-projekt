@@ -17,7 +17,7 @@ exports.createPages = async ({ graphql, actions }) => {
           slug
           updatedAt
           image {
-            fixed(width: 360, height: 300) {
+            fixed(width: 280, height: 200) {
               src
               srcSet
               srcSetWebp

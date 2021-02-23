@@ -78,9 +78,10 @@
 
 .success {
   opacity: 0;
-  color: greenyellow;
+  color: green;
   margin: 20px auto;
   margin-top: 0;
+  font-size: 22px;
 }
 
 .form .error.show,
