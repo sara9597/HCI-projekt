@@ -100,12 +100,18 @@ const MusiciansContainer = () => {
               value={state.query}
               onChange={handleInputChange}
             />{" "}
-          </div>
+          </div>{" "}
           <div className={styles.form}>
-            <FormControl style={{ display: "flex", flexDirection: "column" , paddingLeft : "0px" }}>
+            <FormControl
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                paddingLeft: "0px"
+              }}
+            >
               <FormLabel
                 className={styles.formLabel}
-                style={{ paddingLeft: "7.3vw",  fontSize: "20px" }}
+                style={{ paddingLeft: "7.3vw", fontSize: "20px" }}
               >
                 <strong>Filter By Genre:</strong>
               </FormLabel>

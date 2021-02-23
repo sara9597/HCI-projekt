@@ -7,5 +7,4 @@ const MusiciansPage = () => (
     <MusiciansContainer />
   </HeaderFooterLayout>
 )
-
 export default MusiciansPage
