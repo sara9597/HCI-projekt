@@ -78,25 +78,28 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 616px) {
   .form form > div {
-    width: 100% !important;
+    width: 300px !important;
   }
 
   .form h2 {
-    padding-left: 70px !important;
+    padding-left: 0px !important;
     font-size: 30px !important;
     text-align: center;
   }
 }
 
-@media screen and (max-width: 362px) {
+@media screen and (max-width: 410px) {
   .form h2 {
     padding-left: 35px !important;
     font-size: 25px !important;
   }
   .form form input {
     font-size: 15px !important;
+  }
+  .form form > div {
+    width: 100% !important;
   }
 }
 /*/////////////*/
