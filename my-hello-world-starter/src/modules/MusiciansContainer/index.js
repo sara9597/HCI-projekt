@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import Img from "gatsby-image"
 import styles from "./style.module.css"
 import Pages from "../../components/Pages"
 
@@ -97,16 +96,16 @@ const MusiciansContainer = () => {
               className={styles.input}
               type="text"
               aria-label="Search"
-              placeholder="Search musicians"
+              placeholder="Search musicians..."
               value={state.query}
               onChange={handleInputChange}
             />{" "}
           </div>
           <div className={styles.form}>
-            <FormControl style={{ display: "flex", flexDirection: "column" }}>
+            <FormControl style={{ display: "flex", flexDirection: "column" , paddingLeft : "0px" }}>
               <FormLabel
                 className={styles.formLabel}
-                style={{ paddingLeft: "7.3vw" }}
+                style={{ paddingLeft: "7.3vw",  fontSize: "20px" }}
               >
                 <strong>Filter By Genre:</strong>
               </FormLabel>
