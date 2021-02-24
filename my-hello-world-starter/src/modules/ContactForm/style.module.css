@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   padding: 50px 50px;
-  /*background-image: url("../../images/ContactBackground.jpg");*/
 }
 
 .box {
@@ -40,8 +39,6 @@
     padding: 0px !important;
   }
 
-  .contactBox {
-  }
 }
 
 @media screen and (max-width: 494px) {

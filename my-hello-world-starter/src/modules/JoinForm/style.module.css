@@ -78,7 +78,7 @@
   }
 }
 
-@media screen and (max-width: 616px) {
+@media screen and (max-width: 650px) {
   .form form > div {
     width: 300px !important;
   }
@@ -90,7 +90,7 @@
   }
 }
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 450px) {
   .form h2 {
     padding-left: 35px !important;
     font-size: 25px !important;
@@ -190,7 +190,7 @@
   background: #d6c8c8;
   cursor: pointer;
   border: 2px solid black;
-  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.707);
 }
 
 @media screen and (max-width: 600px) {

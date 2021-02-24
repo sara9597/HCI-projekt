@@ -29,14 +29,14 @@ const NavItem = styled(Link)`
       width: 0%;
       content: ".";
       color: transparent;
-      background: #8a286e;
+      background: #c79817;
       height: 2px;
       transition: all 0.4s ease-in;
     }
   
     :hover {
       transform: scale(1.05);
-      color: #8a286e;
+      color: #c79817;
       ::after {
         width: 100%;
       }

@@ -37,7 +37,7 @@ const Navbox = styled.div`
     height: 420px;
     justify-content: flex-start;
     padding-top: 10vh;
-    background-color: #dfc7dc;
+    background-color: #e8d090;
     transition: all 0.3s ease-in;
     top: 8vh;
     margin-top: -15px;
