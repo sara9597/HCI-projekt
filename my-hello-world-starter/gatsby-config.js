@@ -8,24 +8,24 @@ module.exports = {
     menuItems: [
       {
         text: "HOME",
-        link: "/",
+        link: "/"
       },
       {
         text: "MUSICIANS",
-        link: "/musicians",
+        link: "/musicians"
       },
       {
         text: "BLOG",
-        link: "/blog",
+        link: "/blog"
       },
       {
         text: "CONTAT",
-        link: "/contact",
+        link: "/contact"
       },
       {
         text: "JOIN",
-        link: "/join",
-      },
+        link: "/join"
+      }
     ]
   },
   plugins: [
@@ -62,7 +62,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png` // This path is relative to the root of the site.
+        icon: `src/images/logofav.png` // This path is relative to the root of the site.
       }
     },
     {

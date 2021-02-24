@@ -107,10 +107,20 @@ const MusicianPost = ({ pageContext }) => {
                           nested
                         >
                           {" "}
-                          <div className={styles.content}>
-                            <span>You successfully booked {title}! </span>
+                          <div
+                            className={styles.content}
+                            style={{
+                              display: "grid",
+                              justifyContent: "space-around",
+                              padding: "20px"
+                            }}
+                          >
+                            <p style={{ marginLeft: "10px" }}>
+                              You successfully booked {title}!{" "}
+                            </p>
 
                             <button
+                              style={{ marginRight: "auto" }}
                               className={styles.button2}
                               onClick={() => {
                                 console.log("modal closed ")
