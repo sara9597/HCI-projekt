@@ -9,10 +9,11 @@ import styles from "./musician.module.css"
 import HeaderFooterLayout from "../layouts/headerFooter"
 import Popup from "reactjs-popup"
 import "reactjs-popup/dist/index.css"
+import { myLocalStorage } from "../helper"
 
 const MusicianPost = ({ pageContext }) => {
   const { body, title, description, image, next, prev } = pageContext
-  const [user, setUser] = useState(localStorage.getItem("loggedIn"))
+  const [user, setUser] = useState(myLocalStorage.getItem("loggedIn"))
 
   return (
     <HeaderFooterLayout>

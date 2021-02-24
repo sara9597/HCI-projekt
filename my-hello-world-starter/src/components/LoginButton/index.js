@@ -1,7 +1,7 @@
 import React from "react"
 import styles from "./style.module.css"
 import { Link } from "gatsby"
-import { myLocalStorage } from "../../pages/helper"
+import { myLocalStorage } from "../../helper"
 
 const loggedIn = () => !!myLocalStorage.getItem("loggedIn")
 
@@ -18,9 +18,11 @@ const LoginButton = () => (
             }
             role="button"
             tabIndex={0}
-            onKeyDown={loggedIn()
-              ? () => myLocalStorage.removeItem("loggedIn")
-              : () => { }}
+            onKeyDown={
+              loggedIn()
+                ? () => myLocalStorage.removeItem("loggedIn")
+                : () => {}
+            }
           >
             {loggedIn() ? "LOGOUT" : "LOGIN"}
           </section>

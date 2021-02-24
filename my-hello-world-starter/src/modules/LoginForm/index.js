@@ -3,7 +3,8 @@ import { navigate } from "gatsby"
 
 import styles from "./style.module.css"
 import style from "../../components/LoginButton/style.module.css"
-import { myLocalStorage } from "../../pages/helper"
+
+import { myLocalStorage } from "../../helper"
 
 const users = [
   {
