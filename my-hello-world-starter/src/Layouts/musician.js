@@ -103,9 +103,24 @@ const MusicianPost = ({ pageContext }) => {
                               Yes{" "}
                             </button>
                           }
-                          position="top center"
+                          modal
                           nested
-                        ></Popup>
+                        >
+                          {" "}
+                          <div className={styles.content}>
+                            <span>You successfully booked {title}! </span>
+
+                            <button
+                              className={styles.button2}
+                              onClick={() => {
+                                console.log("modal closed ")
+                                close()
+                              }}
+                            >
+                              OK
+                            </button>
+                          </div>
+                        </Popup>
                         <button
                           className={styles.button2}
                           onClick={() => {
@@ -122,8 +137,17 @@ const MusicianPost = ({ pageContext }) => {
                       </span>
                     </div>
                   ) : (
-                    (setTimeout(() => navigate("/login"), 4000),
-                    "Please login first. You will be redirected to login page shortly.")
+                    <div>
+                      <p style={{ display: "flex", justifyContent: "center" }}>
+                        Please{" "}
+                        <Link to="/login">
+                          <span style={{ padding: "0.5vw" }}>
+                            <strong>LOGIN </strong>{" "}
+                          </span>
+                        </Link>{" "}
+                        first
+                      </p>{" "}
+                    </div>
                   )}
                 </Popup>
 
