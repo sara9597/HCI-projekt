@@ -1,6 +1,8 @@
 import React from "react"
 import styles from "./style.module.css"
 import { Link } from "gatsby"
+import PhoneIcon from "@material-ui/icons/Phone"
+import MailOutlineIcon from "@material-ui/icons/MailOutline"
 
 const Footer = () => (
   <footer className={styles.footer}>
@@ -18,8 +20,13 @@ const Footer = () => (
     </ul>
     <ul className={styles.address}>
       <li className={styles.title}>CONTACT:</li>
-      <li>musicagent@gmail.com</li>
-      <li className={styles.phone}>234-432</li>
+      <li>
+        <MailOutlineIcon style={{ marginBottom: "-5px" }} />{" "}
+        musicagent@gmail.com
+      </li>
+      <li className={styles.phone}>
+        <PhoneIcon style={{ marginBottom: "-5px" }} /> 234-432
+      </li>
     </ul>
     <ul className={styles.follow}>
       <li>

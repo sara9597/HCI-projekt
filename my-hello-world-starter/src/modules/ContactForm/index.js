@@ -1,5 +1,7 @@
 import React from "react"
-
+import PhoneIcon from "@material-ui/icons/Phone"
+import MailOutlineIcon from "@material-ui/icons/MailOutline"
+import LocationOnIcon from "@material-ui/icons/LocationOn"
 import styles from "./style.module.css"
 import style from "../../components/LoginButton/style.module.css"
 
@@ -9,9 +11,17 @@ const ContactForm = () => (
       <div className="contactBox">
         <section className={styles.contactInfo}>
           <h2 className={styles.title}>CONTACT US</h2>
-          <p> 2100, Split Croatia</p>
-          <p>musicagent@gmail.com</p>
-          <p>123-456-7890</p>
+          <p>
+            <LocationOnIcon style={{ marginBottom: "-5px" }} /> 2100, Split
+            Croatia
+          </p>
+          <p>
+            <MailOutlineIcon style={{ marginBottom: "-5px" }} />{" "}
+            musicagent@gmail.com
+          </p>
+          <p>
+            <PhoneIcon style={{ marginBottom: "-5px" }} /> 123-456-7890
+          </p>
         </section>
       </div>
       <section className={styles.form1}>
