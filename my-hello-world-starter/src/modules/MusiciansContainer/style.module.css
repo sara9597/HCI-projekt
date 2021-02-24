@@ -104,7 +104,7 @@ transform: scale(1.05);
 
 .list li:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.707);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
   transform: scale(1.05);
 }
 
@@ -191,6 +191,14 @@ transform: scale(1.05);
   }
 }
 
+@media screen and (max-width: 425px) {
+  .input{
+  width: 180px;
+  height: 35px;
+  font-size: 17px;
+  }
+}
+
 @media screen and (max-width: 336px) {
   .form {
     width: 280px;
@@ -198,5 +206,8 @@ transform: scale(1.05);
   .search {
     padding-left: 2px;
     width: 220px;
+  }
+  .imageHalf img{
+    width: 270px;
   }
 }

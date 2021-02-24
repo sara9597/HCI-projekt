@@ -8,26 +8,23 @@
    
   .container header {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    height: 70px;
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 30px;
   }
+
+  .container header h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
    .container h2{
     font-size: 30px;
    }
 
-   h2{
-    margin-left: 10px;
-    margin-right: 10px;
-   }
-
-   .container .headerTwo {
-    width: 52vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-   
   .container header span {
     font-size: 20px;
     font-weight: bold;
@@ -58,6 +55,10 @@
       .container {
         padding: 15px 40px 15px 40px;
       }
+
+      .container header h2 {
+        left: 54%;
+      }
     }
 
     @media only screen and (max-width: 400px) {
@@ -74,3 +75,9 @@
         font-size: 16px;
       }
       }
+
+      @media only screen and (max-width: 342px){
+      .container header{
+        width: 125%;
+      }
+    }

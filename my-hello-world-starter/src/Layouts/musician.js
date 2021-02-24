@@ -18,18 +18,36 @@ const MusicianPost = ({ pageContext }) => {
     <HeaderFooterLayout>
       {" "}
       <main className={styles.container}>
-        <header className={!prev || !next ? styles.headerTwo : ""}>
+        <header>
           {prev && (
-            <Link to={`/post/${prev.slug}`}>
-              <span style={{ float: "left" }}>Previous</span>
+            <Link
+              to={`/post/${prev.slug}`}
+              style={{
+                position: "absolute",
+                top: "50%",
+                left: "0",
+                transform: "translate(0, -50%)",
+              }}
+              className="active"
+            >
+              <span>Previous</span>
             </Link>
           )}
 
-          <h2>{title}</h2>
+          <h2 style={{ margin: "0" }}>{title}</h2>
 
           {next && (
-            <Link to={`/post/${next.slug}`}>
-              <span style={{ float: "right" }}>Next</span>
+            <Link
+              to={`/post/${next.slug}`}
+              style={{
+                position: "absolute",
+                top: "50%",
+                right: "0",
+                transform: "translate(0, -50%)",
+              }}
+              className="active1"
+            >
+              <span>Next</span>
             </Link>
           )}
         </header>
@@ -55,13 +73,16 @@ const MusicianPost = ({ pageContext }) => {
               </div>
               <div className={styles.actions}>
                 <Popup
-                  trigger={<button className={styles.button2}> Book </button>}
+                  trigger={<button className={styles.button2} > Book </button>}
                   position="top center"
                   nested
                 >
                   {user ? (
                     <div className={styles.modal}>
-                      <button className={styles.close} onClick={close}>
+                      <button className={styles.close} onClick={close} 
+                      style={{
+                    backgroundColor: "white"
+                  }}>
                         &times;
                       </button>
                       <div className={styles.header}> {title} </div>

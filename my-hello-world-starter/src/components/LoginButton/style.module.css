@@ -35,7 +35,7 @@
   background: #d6c8c8;
   cursor: pointer;
   border: 2px solid black;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.707);
 }
 
