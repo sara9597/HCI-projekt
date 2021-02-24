@@ -2,5 +2,6 @@
   height: 60px;
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid #8f6a43;
 }
   
