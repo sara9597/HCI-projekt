@@ -12,9 +12,9 @@
   padding-left: 12px;
 }
 
-.input:hover{
-transition: all 0.3s ease-in-out;
-transform: scale(1.05);
+.input:hover {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.05);
 }
 
 @media screen and (max-width: 1136px) {
@@ -170,7 +170,7 @@ transform: scale(1.05);
 
   .form {
     width: 380px;
-    }
+  }
 }
 
 @media screen and (max-width: 873px) {
@@ -192,10 +192,10 @@ transform: scale(1.05);
 }
 
 @media screen and (max-width: 425px) {
-  .input{
-  width: 180px;
-  height: 35px;
-  font-size: 17px;
+  .input {
+    width: 180px;
+    height: 35px;
+    font-size: 17px;
   }
 }
 
@@ -207,7 +207,7 @@ transform: scale(1.05);
     padding-left: 2px;
     width: 220px;
   }
-  .imageHalf img{
+  .imageHalf img {
     width: 270px;
   }
 }

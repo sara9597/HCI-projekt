@@ -21,9 +21,9 @@
   transform: translate(-50%, -50%);
 }
 
-.container h2{
+.container h2 {
   font-size: 30px;
- }
+}
 
 .container header span {
   font-size: 20px;
@@ -141,32 +141,32 @@
   .container h2 {
     font-size: 21px;
   }
-    .container {
-      padding: 15px 40px 15px 40px;
-    }
-
-    .container header h2 {
-      left: 54%;
-    }
+  .container {
+    padding: 15px 40px 15px 40px;
   }
 
-  @media only screen and (max-width: 400px) {
-    .container h2 {
-      font-size: 19px;
-    }
-
-    .container {
-      padding-left: 35px;
-      padding-right: 35px;
-    }
-
-    .container header span {
-      font-size: 16px;
-    }
-    }
-
-    @media only screen and (max-width: 342px){
-    .container header{
-      width: 115%;
-    }
+  .container header h2 {
+    left: 54%;
   }
+}
+
+@media only screen and (max-width: 400px) {
+  .container h2 {
+    font-size: 19px;
+  }
+
+  .container {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  .container header span {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 342px) {
+  .container header {
+    width: 115%;
+  }
+}

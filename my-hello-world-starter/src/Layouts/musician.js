@@ -26,7 +26,7 @@ const MusicianPost = ({ pageContext }) => {
                 position: "absolute",
                 top: "50%",
                 left: "0",
-                transform: "translate(0, -50%)",
+                transform: "translate(0, -50%)"
               }}
               className="active"
             >
@@ -43,7 +43,7 @@ const MusicianPost = ({ pageContext }) => {
                 position: "absolute",
                 top: "50%",
                 right: "0",
-                transform: "translate(0, -50%)",
+                transform: "translate(0, -50%)"
               }}
               className="active1"
             >
@@ -73,16 +73,19 @@ const MusicianPost = ({ pageContext }) => {
               </div>
               <div className={styles.actions}>
                 <Popup
-                  trigger={<button className={styles.button2} > Book </button>}
-                  position="top center"
+                  trigger={<button className={styles.button2}> Book </button>}
+                  modal
                   nested
                 >
                   {user ? (
                     <div className={styles.modal}>
-                      <button className={styles.close} onClick={close} 
-                      style={{
-                    backgroundColor: "white"
-                  }}>
+                      <button
+                        className={styles.close}
+                        onClick={close}
+                        style={{
+                          backgroundColor: "white"
+                        }}
+                      >
                         &times;
                       </button>
                       <div className={styles.header}> {title} </div>
@@ -119,7 +122,8 @@ const MusicianPost = ({ pageContext }) => {
                       </span>
                     </div>
                   ) : (
-                    "Please login first"
+                    (setTimeout(() => navigate("/login"), 4000),
+                    "Please login first. You will be redirected to login page shortly.")
                   )}
                 </Popup>
 
