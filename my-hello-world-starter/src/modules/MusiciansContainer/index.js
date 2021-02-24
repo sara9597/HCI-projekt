@@ -122,7 +122,11 @@ const MusiciansContainer = () => {
                     control={
                       <Checkbox
                         onChange={handleChange}
-                        style={{ color: "#8f6a43" }}
+                        style={{
+                          color: "#8f6a43",
+                          
+                        }}
+                        size="medium"
                       />
                     }
                     label={movie.genre}
